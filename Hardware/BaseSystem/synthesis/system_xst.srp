@@ -1,0 +1,425 @@
+Release 10.1.03 - xst K.39 (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> 
+PMSPEC -- Overriding Xilinx file </opt/Xilinx/10.1/EDK/virtex2p/data/virtex2p.acd> with local file </opt/Xilinx/10.1/ISE/virtex2p/data/virtex2p.acd>
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_xst.prj"
+
+---- Target Parameters
+Target Device                      : xc2vp30ff896-7
+Output File Name                   : "../implementation/system.ngc"
+
+---- Source Options
+Top Module Name                    : system
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 10000
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/hdl/system.vhd" in Library work.
+Entity <system> compiled.
+Entity <system> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <system> in library <work> (architecture <STRUCTURE>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <system> in library <work> (Architecture <STRUCTURE>).
+Entity <system> analyzed. Unit <system> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <system>.
+    Related source file is "/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/hdl/system.vhd".
+Unit <system> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/ppc405_0_wrapper.ngc>.
+Reading core <../implementation/jtagppc_cntlr_0_wrapper.ngc>.
+Reading core <../implementation/plb0_wrapper.ngc>.
+Reading core <../implementation/xps_bram_if_cntlr_1_wrapper.ngc>.
+Reading core <../implementation/plb_bram_if_cntlr_1_bram_wrapper.ngc>.
+Reading core <../implementation/rs232_uart_1_wrapper.ngc>.
+Reading core <../implementation/ethernet_mac_wrapper.ngc>.
+Reading core <../implementation/clock_generator_0_wrapper.ngc>.
+Reading core <../implementation/proc_sys_reset_0_wrapper.ngc>.
+Reading core <../implementation/fpu_0_wrapper.ngc>.
+Loading core <ppc405_0_wrapper> for timing and area information for instance <ppc405_0>.
+Loading core <jtagppc_cntlr_0_wrapper> for timing and area information for instance <jtagppc_cntlr_0>.
+Loading core <plb0_wrapper> for timing and area information for instance <plb0>.
+Loading core <xps_bram_if_cntlr_1_wrapper> for timing and area information for instance <xps_bram_if_cntlr_1>.
+Loading core <plb_bram_if_cntlr_1_bram_wrapper> for timing and area information for instance <plb_bram_if_cntlr_1_bram>.
+Loading core <rs232_uart_1_wrapper> for timing and area information for instance <RS232_Uart_1>.
+Loading core <ethernet_mac_wrapper> for timing and area information for instance <Ethernet_MAC>.
+Loading core <clock_generator_0_wrapper> for timing and area information for instance <clock_generator_0>.
+Loading core <proc_sys_reset_0_wrapper> for timing and area information for instance <proc_sys_reset_0>.
+Loading core <fpu_0_wrapper> for timing and area information for instance <fpu_0>.
+Loading device for application Rf_Device from file '2vp30.nph' in environment /opt/Xilinx/10.1/ISE:/opt/Xilinx/10.1/EDK.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system> ...
+
+Mapping all equations...
+WARNING:Xst:1513 - No elements found for TNM 'FFS : ppc405_0_WRAPPER' on object 'ppc405_0/ppc405_0/PPC405_i/PPC405_i'.
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <plb0> is equivalent to the following 2 FFs/Latches : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbWrDBusBusyReg_i> in Unit <plb0> is equivalent to the following FF/Latch : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbWrDBusBusyReg_i_1> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecWrInProgReg_i> in Unit <plb0> is equivalent to the following FF/Latch : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecWrInProgReg_i_1> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb0> is equivalent to the following 6 FFs/Latches : <plb0/GEN_MPLB_RST[0].I_MPLB_RST> <plb0/GEN_SPLB_RST[3].I_SPLB_RST> <plb0/GEN_SPLB_RST[2].I_SPLB_RST> <plb0/GEN_SPLB_RST[1].I_SPLB_RST> <plb0/GEN_SPLB_RST[0].I_SPLB_RST> <plb0/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <plb0> is equivalent to the following 2 FFs/Latches : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_SET_SLBUSY> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_ADDRACK> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK_2BUS> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/state21a> in Unit <Ethernet_MAC> is equivalent to the following 2 FFs/Latches : <Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_state_machine/state19a> <Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_state_machine/state21a> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_state_machine/state24a> in Unit <Ethernet_MAC> is equivalent to the following FF/Latch : <Ethernet_MAC/XEMAC_I/TX_PONG_GEN.TX_DONE_D1_I> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <plb0> is equivalent to the following 2 FFs/Latches : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbWrDBusBusyReg_i> in Unit <plb0> is equivalent to the following FF/Latch : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbWrDBusBusyReg_i_1> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecWrInProgReg_i> in Unit <plb0> is equivalent to the following FF/Latch : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecWrInProgReg_i_1> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb0> is equivalent to the following 6 FFs/Latches : <plb0/GEN_MPLB_RST[0].I_MPLB_RST> <plb0/GEN_SPLB_RST[3].I_SPLB_RST> <plb0/GEN_SPLB_RST[2].I_SPLB_RST> <plb0/GEN_SPLB_RST[1].I_SPLB_RST> <plb0/GEN_SPLB_RST[0].I_SPLB_RST> <plb0/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <plb0> is equivalent to the following 2 FFs/Latches : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_SET_SLBUSY> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_ADDRACK> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK_2BUS> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/state21a> in Unit <Ethernet_MAC> is equivalent to the following 2 FFs/Latches : <Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_state_machine/state19a> <Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_state_machine/state21a> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_state_machine/state24a> in Unit <Ethernet_MAC> is equivalent to the following FF/Latch : <Ethernet_MAC/XEMAC_I/TX_PONG_GEN.TX_DONE_D1_I> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/system.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 29
+
+Cell Usage :
+# BELS                             : 3179
+#      BUF                         : 64
+#      GND                         : 12
+#      INV                         : 66
+#      LUT1                        : 46
+#      LUT2                        : 252
+#      LUT2_D                      : 9
+#      LUT2_L                      : 17
+#      LUT3                        : 452
+#      LUT3_D                      : 16
+#      LUT3_L                      : 36
+#      LUT4                        : 1300
+#      LUT4_D                      : 47
+#      LUT4_L                      : 50
+#      MULT_AND                    : 28
+#      MUXCY                       : 369
+#      MUXCY_D                     : 4
+#      MUXCY_L                     : 24
+#      MUXF5                       : 103
+#      VCC                         : 11
+#      XORCY                       : 273
+# FlipFlops/Latches                : 1734
+#      FD                          : 157
+#      FDCE                        : 44
+#      FDE                         : 71
+#      FDP                         : 4
+#      FDPE                        : 22
+#      FDR                         : 653
+#      FDRE                        : 585
+#      FDRS                        : 41
+#      FDRSE                       : 22
+#      FDS                         : 68
+#      FDSE                        : 67
+# RAMS                             : 54
+#      RAM16X1D                    : 12
+#      RAM16X1S                    : 4
+#      RAMB16_S2_S2                : 32
+#      RAMB16_S36_S36              : 2
+#      RAMB16_S4_S36               : 4
+# Shift Registers                  : 25
+#      SRL16                       : 5
+#      SRL16E                      : 20
+# Clock Buffers                    : 3
+#      BUFG                        : 1
+#      BUFGP                       : 2
+# IO Buffers                       : 27
+#      IBUF                        : 10
+#      IBUFG                       : 1
+#      OBUF                        : 16
+# DCMs                             : 1
+#      DCM                         : 1
+# Others                           : 5
+#      JTAGPPC                     : 1
+#      PPC405                      : 2
+#      TIMEGRP                     : 1
+#      TIMESPEC                    : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2vp30ff896-7 
+
+ Number of Slices:                     1577  out of  13696    11%  
+ Number of Slice Flip Flops:           1723  out of  27392     6%  
+ Number of 4 input LUTs:               2344  out of  27392     8%  
+    Number used as logic:              2291
+    Number used as Shift registers:      25
+    Number used as RAMs:                 28
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of    556     5%  
+    IOB Flip Flops:                      11
+ Number of BRAMs:                        38  out of    136    27%  
+ Number of GCLKs:                         3  out of     16    18%  
+ Number of PPC405s:                       2  out of      2   100%  
+ Number of DCMs:                          1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
+Clock Signal                                                            | Clock buffer(FF name)                                                            | Load  |
+------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
+Ethernet_MAC/PHY_tx_clk                                                 | NONE(Ethernet_MAC/Ethernet_MAC/IOFFS_GEN[3].TX_FF_I)                             | 31    |
+Ethernet_MAC/PHY_rx_clk                                                 | NONE(Ethernet_MAC/Ethernet_MAC/IOFFS_GEN[3].RX_FF_I)                             | 31    |
+sys_clk_pin                                                             | clock_generator_0/Using_DCM0.DCM0_INST/DCM_INST/Using_Virtex.DCM_INST:CLK0       | 1709  |
+Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/N0| NONE(Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU130)| 2     |
+Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/N0| NONE(Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU130)| 2     |
+------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                       | Buffer(FF name)                                                                  | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
+Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/RX/fifo_reset(Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/RX/fifo_reset1:O)                                    | NONE(Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU133)| 31    |
+Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/TX/txComboBusFifoRst(Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/TX/txComboBusFifoRst1:O)                      | NONE(Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU142)| 31    |
+fpga_0_net_gnd_pin_OBUF(XST_GND:G)                                                                                                                   | NONE(clock_generator_0/RST_shift1)                                               | 4     |
+Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/N0(Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/GND:G)| NONE(Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU130)| 2     |
+Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/N0(Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/GND:G)| NONE(Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU237)| 2     |
+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -7
+
+   Minimum period: 7.997ns (Maximum Frequency: 125.041MHz)
+   Minimum input arrival time before clock: 2.024ns
+   Maximum output required time after clock: 4.605ns
+   Maximum combinational path delay: No path found
+
+=========================================================================
+Timing constraint: TSTXOUT_Ethernet_MAC = MAXDELAY FROM TIMEGRP "TXCLK_GRP_Ethernet_MAC" TO TIMEGRP "PADS" 10 nS
+  Total number of paths / destination ports: 5 / 5
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  6.707ns
+  Source:               Ethernet_MAC/Ethernet_MAC/IOFFS_GEN[3].TX_FF_I (FF)
+  Destination:          fpga_0_Ethernet_MAC_PHY_tx_data_pin<3> (PAD)
+  Data Path Delay:      3.293ns (Levels of Logic = 2)
+  Source Clock:         Ethernet_MAC/PHY_tx_clk rising at 0.000ns
+
+  Data Path: Ethernet_MAC/Ethernet_MAC/IOFFS_GEN[3].TX_FF_I (FF) to fpga_0_Ethernet_MAC_PHY_tx_data_pin<3> (PAD)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.370   0.332  Ethernet_MAC/IOFFS_GEN[3].TX_FF_I (PHY_tx_data<3>)
+     end scope: 'Ethernet_MAC'
+     OBUF:I->O                 2.592          fpga_0_Ethernet_MAC_PHY_tx_data_pin_3_OBUF (fpga_0_Ethernet_MAC_PHY_tx_data_pin<3>)
+    ----------------------------------------
+    Total                      3.293ns (2.962ns logic, 0.332ns route)
+                                       (89.9% logic, 10.1% route)
+
+=========================================================================
+Timing constraint: TSRXIN_Ethernet_MAC = MAXDELAY FROM TIMEGRP "PADS" TO TIMEGRP "RXCLK_GRP_Ethernet_MAC" 6 nS
+  Total number of paths / destination ports: 6 / 6
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  4.582ns
+  Source:               fpga_0_Ethernet_MAC_PHY_rx_er_pin (PAD)
+  Destination:          Ethernet_MAC/Ethernet_MAC/IOFFS_GEN2.RER_FF (FF)
+  Data Path Delay:      1.418ns (Levels of Logic = 2)
+  Destination Clock:    Ethernet_MAC/PHY_rx_clk rising at 6.000ns
+
+  Data Path: fpga_0_Ethernet_MAC_PHY_rx_er_pin (PAD) to Ethernet_MAC/Ethernet_MAC/IOFFS_GEN2.RER_FF (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.878   0.331  fpga_0_Ethernet_MAC_PHY_rx_er_pin_IBUF (fpga_0_Ethernet_MAC_PHY_rx_er_pin_IBUF)
+     begin scope: 'Ethernet_MAC'
+     FDRE:D                    0.208          Ethernet_MAC/IOFFS_GEN2.RER_FF
+    ----------------------------------------
+    Total                      1.418ns (1.086ns logic, 0.331ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: NET Ethernet_MAC/PHY_rx_clk PERIOD = 40 nS HIGH 14 nS
+  Clock period: 2.916ns (frequency: 342.883MHz)
+  Total number of paths / destination ports: 114 / 68
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  37.084ns
+  Source:               Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU194 (FF)
+  Destination:          Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU249 (FF)
+  Data Path Delay:      2.916ns (Levels of Logic = 6)
+  Source Clock:         Ethernet_MAC/PHY_rx_clk falling at 20.000ns
+  Destination Clock:    Ethernet_MAC/PHY_rx_clk falling at 60.000ns
+
+  Data Path: Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU194 (FF) to Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU249 (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.370   0.533  BU194 (N422)
+     LUT4:I0->O            1   0.275   0.000  BU235 (N1564)
+     MUXCY:S->O            1   0.334   0.000  BU236 (N1568)
+     MUXCY:CI->O           1   0.036   0.000  BU239 (N1567)
+     MUXCY:CI->O           1   0.036   0.000  BU242 (N1566)
+     MUXCY_D:CI->LO        0   0.416   0.000  BU245 (N1565)
+     XORCY:CI->O           1   0.708   0.000  BU248 (N1571)
+     FDPE:D                    0.208          BU249
+    ----------------------------------------
+    Total                      2.916ns (2.383ns logic, 0.533ns route)
+                                       (81.7% logic, 18.3% route)
+
+=========================================================================
+Timing constraint: NET Ethernet_MAC/PHY_tx_clk PERIOD = 40 nS HIGH 14 nS
+  Clock period: 2.920ns (frequency: 342.413MHz)
+  Total number of paths / destination ports: 117 / 53
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  37.080ns
+  Source:               Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU142 (FF)
+  Destination:          Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU142 (FF)
+  Data Path Delay:      2.920ns (Levels of Logic = 6)
+  Source Clock:         Ethernet_MAC/PHY_tx_clk falling at 20.000ns
+  Destination Clock:    Ethernet_MAC/PHY_tx_clk falling at 60.000ns
+
+  Data Path: Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU142 (FF) to Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU142 (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             9   0.370   0.537  BU142 (empty)
+     LUT4:I3->O            1   0.275   0.000  BU128 (N982)
+     MUXCY:S->O            1   0.334   0.000  BU129 (N986)
+     MUXCY:CI->O           1   0.036   0.000  BU132 (N985)
+     MUXCY:CI->O           1   0.036   0.000  BU135 (N984)
+     MUXCY_D:CI->LO        0   0.416   0.000  BU138 (N983)
+     XORCY:CI->O           1   0.708   0.000  BU141 (N989)
+     FDPE:D                    0.208          BU142
+    ----------------------------------------
+    Total                      2.920ns (2.383ns logic, 0.537ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 17.24 secs
+ 
+--> 
+
+
+Total memory usage is 222200 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
+

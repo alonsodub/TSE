@@ -1,0 +1,215 @@
+Release 10.1.03 - platgen EDK_K_SP3.6 (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc2vp30ff896-7 -lang vhdl -lp
+/home/alonso/Linux-on-FPGA/Resources/lib/ system.mhs 
+
+Parse system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor ppc405_0
+  (0b0000010000-0b0000010011) ppc405_0	
+  (0b0000100000-0b0000100011) ppc405_0	
+  (0x81000000-0x8100ffff) Ethernet_MAC	plb0
+  (0x84000000-0x8400ffff) RS232_Uart_1	plb0
+  (0xfffe8000-0xfffeffff) fpu_0	plb0
+  (0xffff0000-0xffffffff) xps_bram_if_cntlr_1	plb0
+
+Check platform address map ...
+INFO:MDT - IPNAME:ppc405_0 INSTANCE:ppc405 -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/ppc405_v3_00_a/data/ppc40
+   5_v2_1_0.mpd line 62 - tool is overriding PARAMETER C_DPLB0_P2P value to 0
+INFO:MDT - IPNAME:ppc405_0 INSTANCE:ppc405 -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/ppc405_v3_00_a/data/ppc40
+   5_v2_1_0.mpd line 64 - tool is overriding PARAMETER C_IPLB0_P2P value to 0
+
+Computing clock values...
+
+Overriding system level properties ...
+INFO:MDT - IPNAME:jtagppc_cntlr_0 INSTANCE:jtagppc_cntlr -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/jtagppc_cntlr_v2_01_c/dat
+   a/jtagppc_cntlr_v2_1_0.mpd line 36 - tcl is overriding PARAMETER
+   C_NUM_PPC_USED value to 1
+INFO:MDT - IPNAME:plb0 INSTANCE:plb_v46 -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_03_a/data/plb_
+   v46_v2_1_0.mpd line 34 - tool is overriding PARAMETER C_PLBV46_NUM_MASTERS
+   value to 2
+INFO:MDT - IPNAME:plb0 INSTANCE:plb_v46 -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_03_a/data/plb_
+   v46_v2_1_0.mpd line 35 - tool is overriding PARAMETER C_PLBV46_NUM_SLAVES
+   value to 4
+INFO:MDT - IPNAME:plb0 INSTANCE:plb_v46 -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_03_a/data/plb_
+   v46_v2_1_0.mpd line 36 - tool is overriding PARAMETER C_PLBV46_MID_WIDTH
+   value to 1
+INFO:MDT - IPNAME:xps_bram_if_cntlr_1 INSTANCE:xps_bram_if_cntlr -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_a
+   /data/xps_bram_if_cntlr_v2_1_0.mpd line 41 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 64
+INFO:MDT - IPNAME:xps_bram_if_cntlr_1 INSTANCE:xps_bram_if_cntlr -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_a
+   /data/xps_bram_if_cntlr_v2_1_0.mpd line 46 - tool is overriding PARAMETER
+   C_SPLB_SMALLEST_MASTER value to 64
+INFO:MDT - IPNAME:plb_bram_if_cntlr_1_bram INSTANCE:bram_block -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/b
+   ram_block_v2_1_0.mpd line 36 - tool is overriding PARAMETER C_MEMSIZE value
+   to 0x10000
+INFO:MDT - IPNAME:plb_bram_if_cntlr_1_bram INSTANCE:bram_block -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/b
+   ram_block_v2_1_0.mpd line 37 - tool is overriding PARAMETER C_PORT_DWIDTH
+   value to 64
+INFO:MDT - IPNAME:plb_bram_if_cntlr_1_bram INSTANCE:bram_block -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/b
+   ram_block_v2_1_0.mpd line 39 - tool is overriding PARAMETER C_NUM_WE value to
+   8
+INFO:MDT - IPNAME:RS232_Uart_1 INSTANCE:xps_uartlite -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_00_a/data
+   /xps_uartlite_v2_1_0.mpd line 42 - tool is overriding PARAMETER C_SPLB_DWIDTH
+   value to 64
+INFO:MDT - IPNAME:RS232_Uart_1 INSTANCE:xps_uartlite -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_00_a/data
+   /xps_uartlite_v2_1_0.mpd line 45 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2
+INFO:MDT - IPNAME:Ethernet_MAC INSTANCE:xps_ethernetlite -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/
+   data/xps_ethernetlite_v2_1_0.mpd line 43 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 64
+INFO:MDT - IPNAME:Ethernet_MAC INSTANCE:xps_ethernetlite -
+   /opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/
+   data/xps_ethernetlite_v2_1_0.mpd line 46 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2
+INFO:MDT - IPNAME:fpu_0 INSTANCE:fpu -
+   /home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/data/fpu_v2
+   _1_0.mpd line 26 - tool is overriding PARAMETER C_SPLB_DWIDTH value to 64
+INFO:MDT - IPNAME:fpu_0 INSTANCE:fpu -
+   /home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/data/fpu_v2
+   _1_0.mpd line 27 - tool is overriding PARAMETER C_SPLB_NUM_MASTERS value to 2
+INFO:MDT - IPNAME:fpu_0 INSTANCE:fpu -
+   /home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/data/fpu_v2
+   _1_0.mpd line 28 - tool is overriding PARAMETER C_SPLB_MID_WIDTH value to 1
+INFO:MDT - IPNAME:fpu_0 INSTANCE:fpu -
+   /home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/data/fpu_v2
+   _1_0.mpd line 32 - tool is overriding PARAMETER C_SPLB_SMALLEST_MASTER value
+   to 64
+
+Running system level Update ...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Check platform configuration ...
+INFO:MDT - IPNAME:xps_ethernetlite INSTANCE:Ethernet_MAC -
+   /home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 103 - This
+   design requires design constraints to guarantee performance.
+   Please refer to the xps_ethernetlite_v2_00_a data sheet for details.  
+   The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs
+   Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet
+   operation.
+IPNAME:plb_v46 INSTANCE:plb0 -
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 63 - 2 master(s)
+: 4 slave(s)
+
+Check port drivers...
+WARNING:MDT - PORT:Peripheral_Reset CONNECTOR:sys_periph_reset -
+   /home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 147 - floating
+   connection!
+
+Performing Clock DRCs...
+
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The Ethernet_MAC core has constraints automatically generated by XPS in
+implementation/ethernet_mac_wrapper/ethernet_mac_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+IPNAME:xps_ethernetlite INSTANCE:ethernet_mac -
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 103 - Copying
+(BBD-specified) netlist files.
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:plb_bram_if_cntlr_1_bram -
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 82 - elaborating
+IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+INFO:MDT - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized.
+INSTANCE:ppc405_0 - /home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs
+line 46 - Running XST synthesis
+INSTANCE:jtagppc_cntlr_0 -
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 57 - Running XST
+synthesis
+INSTANCE:plb0 - /home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line
+63 - Running XST synthesis
+INSTANCE:xps_bram_if_cntlr_1 -
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 72 - Running XST
+synthesis
+INSTANCE:plb_bram_if_cntlr_1_bram -
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 82 - Running XST
+synthesis
+INSTANCE:rs232_uart_1 -
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 88 - Running XST
+synthesis
+INSTANCE:ethernet_mac -
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 103 - Running XST
+synthesis
+INSTANCE:clock_generator_0 -
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 123 - Running XST
+synthesis
+INSTANCE:proc_sys_reset_0 -
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 138 - Running XST
+synthesis
+INSTANCE:fpu_0 - /home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line
+150 - Running XST synthesis
+
+Running NGCBUILD ...
+IPNAME:ppc405_0_wrapper INSTANCE:ppc405_0 -
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 46 - Running
+NGCBUILD
+IPNAME:rs232_uart_1_wrapper INSTANCE:rs232_uart_1 -
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 88 - Running
+NGCBUILD
+IPNAME:ethernet_mac_wrapper INSTANCE:ethernet_mac -
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/system.mhs line 103 - Running
+NGCBUILD
+
+Rebuilding cache ...
+
+Total run time: 196.00 seconds

@@ -1,0 +1,304 @@
+Parsing PAO project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+HDL language for the peripheral (top level) design unit fpu is vhdl ...
+INFO:MDT - Create temparary xst project file:
+   /home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu.prj
+WARNING:HDLParsers:3607 - Unit fpu_v1_00_a/FPadd is now defined in a different
+   file.  It was defined in
+   "/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/adder/fpadd_pipeli
+   ne.vhd", and is now defined in
+   "/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/adder/fpadd_single
+   _cycle.vhd".
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/inferred_lut4.vhd" in Library proc_common_v2_00_a.
+Entity <inferred_lut4> compiled.
+Entity <inferred_lut4> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/pf_counter_bit.vhd" in Library proc_common_v2_00_a.
+Entity <pf_counter_bit> compiled.
+Entity <pf_counter_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/pf_adder_bit.vhd" in Library proc_common_v2_00_a.
+Entity <pf_adder_bit> compiled.
+Entity <pf_adder_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/pf_counter.vhd" in Library proc_common_v2_00_a.
+Entity <pf_counter> compiled.
+Entity <pf_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/pf_occ_counter.vhd" in Library proc_common_v2_00_a.
+Entity <pf_occ_counter> compiled.
+Entity <pf_occ_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/proc_common_pkg.vhd" in Library proc_common_v2_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/or_muxcy.vhd" in Library proc_common_v2_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/family_support.vhd" in Library proc_common_v2_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/pf_occ_counter_top.vhd" in Library proc_common_v2_00_a.
+Entity <pf_occ_counter_top> compiled.
+Entity <pf_occ_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/pf_counter_top.vhd" in Library proc_common_v2_00_a.
+Entity <pf_counter_top> compiled.
+Entity <pf_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/pf_adder.vhd" in Library proc_common_v2_00_a.
+Entity <pf_adder> compiled.
+Entity <pf_adder> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/counter_f.vhd" in Library proc_common_v2_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/pf_dpram_select.vhd" in Library proc_common_v2_00_a.
+Entity <pf_dpram_select> compiled.
+Entity <pf_dpram_select> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/srl16_fifo.vhd" in Library proc_common_v2_00_a.
+Entity <srl16_fifo> compiled.
+Entity <srl16_fifo> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/pselect_f.vhd" in Library proc_common_v2_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/or_gate128.vhd" in Library proc_common_v2_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhd
+l/ipif_pkg.vhd" in Library proc_common_v2_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/dre_v2_00_a/hdl/vhdl/dsp48_
+mux.vhd" in Library dre_v2_00_a.
+Entity <dsp48_mux> compiled.
+Entity <dsp48_mux> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/adder/fplzc_fplzc.vhd
+" in Library fpu_v1_00_a.
+Entity <FPlzc> compiled.
+Entity <FPlzc> (Architecture <FPlzc>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_00_a
+/hdl/vhdl/plb_address_decoder.vhd" in Library plbv46_slave_single_v1_00_a.
+Entity <plb_address_decoder> compiled.
+Entity <plb_address_decoder> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v4_00_a/hdl/vhdl/pf
+_dly1_mux.vhd" in Library wrpfifo_v4_00_a.
+Entity <pf_dly1_mux> compiled.
+Entity <pf_dly1_mux> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/dre_v2_00_a/hdl/vhdl/tx_dre
+_top.vhd" in Library dre_v2_00_a.
+Entity <tx_dre_top> compiled.
+Entity <tx_dre_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/adder/fpadd_normalize
+_struct.vhd" in Library fpu_v1_00_a.
+Entity <FPadd_normalize> compiled.
+Entity <FPadd_normalize> (Architecture <struct>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/adder/fpalign_struct.
+vhd" in Library fpu_v1_00_a.
+Entity <FPalign> compiled.
+Entity <FPalign> (Architecture <struct>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/adder/fpinvert_fpinve
+rt.vhd" in Library fpu_v1_00_a.
+Entity <FPinvert> compiled.
+Entity <FPinvert> (Architecture <FPinvert>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/common/fpnormalize_fp
+normalize.vhd" in Library fpu_v1_00_a.
+Entity <FPnormalize> compiled.
+Entity <FPnormalize> (Architecture <FPnormalize>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/common/fpround_fproun
+d.vhd" in Library fpu_v1_00_a.
+Entity <FPround> compiled.
+Entity <FPround> (Architecture <FPround>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/adder/fpselcomplement
+_fpselcomplement.vhd" in Library fpu_v1_00_a.
+Entity <FPselComplement> compiled.
+Entity <FPselComplement> (Architecture <FPselComplement>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/adder/fpswap_fpswap.v
+hd" in Library fpu_v1_00_a.
+Entity <FPswap> compiled.
+Entity <FPswap> (Architecture <FPswap>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/common/packfp_packfp.
+vhd" in Library fpu_v1_00_a.
+Entity <PackFP> compiled.
+Entity <PackFP> (Architecture <PackFP>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/common/unpackfp_unpac
+kfp.vhd" in Library fpu_v1_00_a.
+Entity <UnpackFP> compiled.
+Entity <UnpackFP> (Architecture <UnpackFP>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_00_a
+/hdl/vhdl/plb_slave_attachment.vhd" in Library plbv46_slave_single_v1_00_a.
+Entity <plb_slave_attachment> compiled.
+Entity <plb_slave_attachment> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v4_00_a/hdl/vhdl/ip
+if_control_wr_dre.vhd" in Library wrpfifo_v4_00_a.
+Entity <ipif_control_wr_dre> compiled.
+Entity <ipif_control_wr_dre> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v4_00_a/hdl/vhdl/wr
+pfifo_dp_cntl.vhd" in Library wrpfifo_v4_00_a.
+Entity <wrpfifo_dp_cntl> compiled.
+Entity <wrpfifo_dp_cntl> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/rdpfifo_v4_00_a/hdl/vhdl/ip
+if_control_rd.vhd" in Library rdpfifo_v4_00_a.
+Entity <ipif_control_rd> compiled.
+Entity <ipif_control_rd> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/rdpfifo_v4_00_a/hdl/vhdl/rd
+pfifo_dp_cntl.vhd" in Library rdpfifo_v4_00_a.
+Entity <rdpfifo_dp_cntl> compiled.
+Entity <rdpfifo_dp_cntl> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/adder/fpadd_single_cy
+cle.vhd" in Library fpu_v1_00_a.
+Entity <FPadd> compiled.
+Entity <FPadd> (Architecture <single_cycle>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/rdpfifo_v4_00_a/hdl/vhdl/rd
+pfifo_top.vhd" in Library rdpfifo_v4_00_a.
+Entity <rdpfifo_top> compiled.
+Entity <rdpfifo_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v4_00_a/hdl/vhdl/wr
+pfifo_top.vhd" in Library wrpfifo_v4_00_a.
+Entity <wrpfifo_top> compiled.
+Entity <wrpfifo_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_00_a
+/hdl/vhdl/plbv46_slave_single.vhd" in Library plbv46_slave_single_v1_00_a.
+Entity <plbv46_slave_single> compiled.
+Entity <plbv46_slave_single> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/user
+_logic.vhd" in Library fpu_v1_00_a.
+Entity <user_logic> compiled.
+Entity <user_logic> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/fpu.
+vhd" in Library fpu_v1_00_a.
+Entity <fpu> compiled.
+Entity <fpu> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/home/alonso/Linux-on-FPGA/Hardware/fpuvhdl/trunk/fpuvhdl/adder/fpadd_pipeline.
+vhd" in Library fpu_v1_00_a.
+Entity <FPadd> compiled.
+Entity <FPadd> (Architecture <pipeline>) compiled.
+
+
+Analyzing HDL attributes ...
+INFO:MDT - IPTYPE set to value : PERIPHERAL
+INFO:MDT - IMP_NETLIST set to value : TRUE
+INFO:MDT - HDL set to value : VHDL
+INFO:MDT - Infer bus clock [SPLB_Clk] for bus interface SPLB ...
+Copying file fpadd_single_cycle.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+Copying file fpnormalize_fpnormalize.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+Copying file fpround_fpround.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+Copying file packfp_packfp.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+Copying file unpackfp_unpackfp.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+Copying file fpadd_normalize_struct.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+Copying file fpadd_pipeline.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+Copying file fpalign_struct.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+Copying file fpinvert_fpinvert.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+Copying file fplzc_fplzc.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+Copying file fpselcomplement_fpselcomplement.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+Copying file fpswap_fpswap.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+Copying file user_logic.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+Copying file fpu.vhd to
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/hdl/vhdl/ ...
+
+Thank you for using Create and Import Peripheral Wizard! Please find your
+imported peripheral under
+/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a.
+
+Summary:
+
+  Logical library     : fpu_v1_00_a
+  Version             : 1.00.a
+  Bus interface(s)    : SPLB 
+
+The following sub-directories will be created:
+
+  - fpu_v1_00_a/data
+  - fpu_v1_00_a/hdl
+  - fpu_v1_00_a/hdl/vhdl
+
+
+The following HDL source files will be copied into the fpu_v1_00_a/hdl/vhdl
+directory:
+
+  - fpadd_single_cycle.vhd
+  - fpnormalize_fpnormalize.vhd
+  - fpround_fpround.vhd
+  - packfp_packfp.vhd
+  - unpackfp_unpackfp.vhd
+  - fpadd_normalize_struct.vhd
+  - fpadd_pipeline.vhd
+  - fpalign_struct.vhd
+  - fpinvert_fpinvert.vhd
+  - fplzc_fplzc.vhd
+  - fpselcomplement_fpselcomplement.vhd
+  - fpswap_fpswap.vhd
+  - user_logic.vhd
+  - fpu.vhd
+
+The following files will be created under the fpu_v1_00_a/data directory:
+
+  - fpu_v2_1_0.mpd
+  - fpu_v2_1_0.pao
+
+

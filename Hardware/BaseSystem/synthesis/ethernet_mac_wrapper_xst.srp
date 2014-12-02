@@ -1,0 +1,2026 @@
+Release 10.1.03 - xst K.39 (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> 
+PMSPEC -- Overriding Xilinx file </opt/Xilinx/10.1/EDK/virtex2p/data/virtex2p.acd> with local file </opt/Xilinx/10.1/ISE/virtex2p/data/virtex2p.acd>
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "ethernet_mac_wrapper_xst.prj"
+
+---- Target Parameters
+Target Device                      : xc2vp30ff896-7
+Output File Name                   : "../implementation/ethernet_mac_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : ethernet_mac_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation/ethernet_mac_wrapper}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/family_support.vhd" in Library proc_common_v2_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/proc_common_pkg.vhd" in Library proc_common_v2_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/inferred_lut4.vhd" in Library proc_common_v2_00_a.
+Entity <inferred_lut4> compiled.
+Entity <inferred_lut4> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/muxf_struct_f.vhd" in Library proc_common_v2_00_a.
+Entity <muxf_struct> compiled.
+Entity <muxf_struct> (Architecture <imp>) compiled.
+Entity <muxf_struct_f> compiled.
+Entity <muxf_struct_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/pf_counter_bit.vhd" in Library proc_common_v2_00_a.
+Entity <pf_counter_bit> compiled.
+Entity <pf_counter_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" in Library proc_common_v2_00_a.
+Entity <cntr_incr_decr_addn_f> compiled.
+Entity <cntr_incr_decr_addn_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/dynshreg_f.vhd" in Library proc_common_v2_00_a.
+Entity <dynshreg_f> compiled.
+Entity <dynshreg_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/pf_adder_bit.vhd" in Library proc_common_v2_00_a.
+Entity <pf_adder_bit> compiled.
+Entity <pf_adder_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/pf_counter.vhd" in Library proc_common_v2_00_a.
+Entity <pf_counter> compiled.
+Entity <pf_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/pf_occ_counter.vhd" in Library proc_common_v2_00_a.
+Entity <pf_occ_counter> compiled.
+Entity <pf_occ_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/counter_bit.vhd" in Library proc_common_v2_00_a.
+Entity <counter_bit> compiled.
+Entity <counter_bit> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/or_muxcy.vhd" in Library proc_common_v2_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" in Library proc_common_v2_00_a.
+Entity <srl_fifo_rbu_f> compiled.
+Entity <srl_fifo_rbu_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/family.vhd" in Library proc_common_v2_00_a.
+Package <family> compiled.
+Package body <family> compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/pf_occ_counter_top.vhd" in Library proc_common_v2_00_a.
+Entity <pf_occ_counter_top> compiled.
+Entity <pf_occ_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/pf_counter_top.vhd" in Library proc_common_v2_00_a.
+Entity <pf_counter_top> compiled.
+Entity <pf_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/pf_adder.vhd" in Library proc_common_v2_00_a.
+Entity <pf_adder> compiled.
+Entity <pf_adder> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/counter.vhd" in Library proc_common_v2_00_a.
+Entity <Counter> compiled.
+Entity <Counter> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/mac_pkg.vhd" in Library xps_ethernetlite_v2_00_b.
+Package <mac_pkg> compiled.
+Package body <mac_pkg> compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/coregen_comp_defs.vhd" in Library proc_common_v2_00_a.
+Package <coregen_comp_defs> compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/common_types_pkg.vhd" in Library proc_common_v2_00_a.
+Package <Common_Types> compiled.
+WARNING:HDLParsers:3534 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/common_types_pkg.vhd" Line 171. In the function Get_RLOC_Name, not all control paths contain a return statement.
+Package body <Common_Types> compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/conv_funs_pkg.vhd" in Library proc_common_v2_00_a.
+Package <conv_funs_pkg> compiled.
+Package body <conv_funs_pkg> compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/addsub.vhd" in Library proc_common_v2_00_a.
+Entity <addsub> compiled.
+Entity <addsub> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/direct_path_cntr.vhd" in Library proc_common_v2_00_a.
+Entity <direct_path_cntr> compiled.
+Entity <direct_path_cntr> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" in Library proc_common_v2_00_a.
+Entity <direct_path_cntr_ai> compiled.
+Entity <direct_path_cntr_ai> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/down_counter.vhd" in Library proc_common_v2_00_a.
+Entity <down_counter> compiled.
+Entity <down_counter> (Architecture <simulation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/eval_timer.vhd" in Library proc_common_v2_00_a.
+Entity <eval_timer> compiled.
+Entity <eval_timer> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ipif_steer.vhd" in Library proc_common_v2_00_a.
+Entity <IPIF_Steer> compiled.
+Entity <IPIF_Steer> (Architecture <IMP>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ipif_steer128.vhd" in Library proc_common_v2_00_a.
+Entity <ipif_steer128> compiled.
+Entity <ipif_steer128> (Architecture <IMP>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ipif_mirror128.vhd" in Library proc_common_v2_00_a.
+Entity <ipif_mirror128> compiled.
+Entity <ipif_mirror128> (Architecture <IMP>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" in Library proc_common_v2_00_a.
+Entity <ld_arith_reg> compiled.
+Entity <ld_arith_reg> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg2.vhd" in Library proc_common_v2_00_a.
+Entity <ld_arith_reg2> compiled.
+Entity <ld_arith_reg2> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot.vhd" in Library proc_common_v2_00_a.
+Entity <mux_onehot> compiled.
+Entity <mux_onehot> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/or_bits.vhd" in Library proc_common_v2_00_a.
+Entity <or_bits> compiled.
+Entity <or_bits> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/or_gate.vhd" in Library proc_common_v2_00_a.
+Entity <or_gate> compiled.
+Entity <or_gate> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/pf_dpram_select.vhd" in Library proc_common_v2_00_a.
+Entity <pf_dpram_select> compiled.
+Entity <pf_dpram_select> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/pselect.vhd" in Library proc_common_v2_00_a.
+Entity <pselect> compiled.
+Entity <pselect> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/pselect_mask.vhd" in Library proc_common_v2_00_a.
+Entity <pselect_mask> compiled.
+Entity <pselect_mask> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/srl16_fifo.vhd" in Library proc_common_v2_00_a.
+Entity <srl16_fifo> compiled.
+Entity <srl16_fifo> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/srl_fifo.vhd" in Library proc_common_v2_00_a.
+Entity <SRL_FIFO> compiled.
+Entity <SRL_FIFO> (Architecture <IMP>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/srl_fifo2.vhd" in Library proc_common_v2_00_a.
+Entity <srl_fifo2> compiled.
+Entity <srl_fifo2> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/srl_fifo3.vhd" in Library proc_common_v2_00_a.
+Entity <srl_fifo3> compiled.
+Entity <srl_fifo3> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/srl_fifo_rbu.vhd" in Library proc_common_v2_00_a.
+Entity <srl_fifo_rbu> compiled.
+Entity <srl_fifo_rbu> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/valid_be.vhd" in Library proc_common_v2_00_a.
+Entity <valid_be> compiled.
+Entity <valid_be> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/or_with_enable_f.vhd" in Library proc_common_v2_00_a.
+Entity <or_with_enable_f> compiled.
+Entity <or_with_enable_f> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/dynshreg_i_f.vhd" in Library proc_common_v2_00_a.
+Entity <dynshreg_i_f> compiled.
+Entity <dynshreg_i_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd" in Library proc_common_v2_00_a.
+Entity <mux_onehot_f> compiled.
+Entity <mux_onehot_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/srl_fifo_f.vhd" in Library proc_common_v2_00_a.
+Entity <srl_fifo_f> compiled.
+Entity <srl_fifo_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/compare_vectors_f.vhd" in Library proc_common_v2_00_a.
+Entity <compare_vectors_f> compiled.
+Entity <compare_vectors_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/counter_f.vhd" in Library proc_common_v2_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/or_muxcy_f.vhd" in Library proc_common_v2_00_a.
+Entity <or_muxcy_f> compiled.
+Entity <or_muxcy_f> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/xor_f.vhd" in Library proc_common_v2_00_a.
+Entity <recursive_xor> compiled.
+Entity <recursive_xor> (Architecture <implementation>) compiled.
+Entity <xor_f> compiled.
+Entity <xor_f> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/soft_reset.vhd" in Library proc_common_v2_00_a.
+Entity <soft_reset> compiled.
+Entity <soft_reset> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/pselect_f.vhd" in Library proc_common_v2_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/or_gate128.vhd" in Library proc_common_v2_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ipif_pkg.vhd" in Library proc_common_v2_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/lfsr16.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <LFSR16> compiled.
+Entity <LFSR16> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/cntr5bit.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <cntr5bit> compiled.
+Entity <cntr5bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/defer_state.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <defer_state> compiled.
+Entity <defer_state> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/crcnibshiftreg.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <CRCNibShiftReg> compiled.
+Entity <CRCNibShiftReg> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_00_a/hdl/vhdl/plb_address_decoder.vhd" in Library plbv46_slave_single_v1_00_a.
+Entity <plb_address_decoder> compiled.
+Entity <plb_address_decoder> (Architecture <IMP>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/ram16x4.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <RAM16x4> compiled.
+Entity <RAM16x4> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/crcgentx.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <CRCGentx> compiled.
+Entity <CRCGentx> (Architecture <arch1>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_intrfce.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <tx_intrfce> compiled.
+Entity <tx_intrfce> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <tx_state_3> compiled.
+Entity <tx_state_3> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/deferral.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <deferral> compiled.
+Entity <deferral> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/msh_cnt.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <msh_cnt> compiled.
+Entity <msh_cnt> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/bocntr.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <bocntr> compiled.
+Entity <bocntr> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <rx_state> compiled.
+Entity <rx_state> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_intrfce.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <rx_intrfce> compiled.
+Entity <rx_intrfce> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/crcgenrx.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <CRCGenrx> compiled.
+Entity <CRCGenrx> (Architecture <arch1>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_00_a/hdl/vhdl/plb_slave_attachment.vhd" in Library plbv46_slave_single_v1_00_a.
+Entity <plb_slave_attachment> compiled.
+Entity <plb_slave_attachment> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/receive.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <receive> compiled.
+Entity <receive> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/transmit_2.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <transmit> compiled.
+Entity <transmit> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/macaddrram.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <MacAddrRAM> compiled.
+Entity <MacAddrRAM> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_00_a/hdl/vhdl/plbv46_slave_single.vhd" in Library plbv46_slave_single_v1_00_a.
+Entity <plbv46_slave_single> compiled.
+Entity <plbv46_slave_single> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ipif_ssp1.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <xps_ipif_ssp1> compiled.
+Entity <xps_ipif_ssp1> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/emac.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <emac> compiled.
+Entity <emac> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/emac_dpram.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <emac_dpram> compiled.
+Entity <emac_dpram> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v1_01_b/hdl/vhdl/pf_dly1_mux.vhd" in Library wrpfifo_v1_01_b.
+Entity <pf_dly1_mux> compiled.
+Entity <pf_dly1_mux> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xemac.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <xemac> compiled.
+Entity <xemac> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v1_01_b/hdl/vhdl/ipif_control_wr.vhd" in Library wrpfifo_v1_01_b.
+Entity <ipif_control_wr> compiled.
+Entity <ipif_control_wr> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v1_01_b/hdl/vhdl/wrpfifo_dp_cntl.vhd" in Library wrpfifo_v1_01_b.
+Entity <wrpfifo_dp_cntl> compiled.
+Entity <wrpfifo_dp_cntl> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/rdpfifo_v1_01_b/hdl/vhdl/ipif_control_rd.vhd" in Library rdpfifo_v1_01_b.
+Entity <ipif_control_rd> compiled.
+Entity <ipif_control_rd> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/rdpfifo_v1_01_b/hdl/vhdl/rdpfifo_dp_cntl.vhd" in Library rdpfifo_v1_01_b.
+Entity <rdpfifo_dp_cntl> compiled.
+Entity <rdpfifo_dp_cntl> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/cntr16bit.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <cntr16bit> compiled.
+Entity <cntr16bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/cntr4bit.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <cntr4bit> compiled.
+Entity <cntr4bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/cntr11bit.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <cntr11bit> compiled.
+Entity <cntr11bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/cntr12bit.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <cntr12bit> compiled.
+Entity <cntr12bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/nibshiftin.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <nibshiftin> compiled.
+Entity <nibshiftin> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/nibshiftdain.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <nibshiftdain> compiled.
+Entity <nibshiftdain> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rxlengthcntr.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <rxlengthcntr> compiled.
+Entity <rxlengthcntr> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/dacheck.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <dacheck> compiled.
+Entity <dacheck> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rxCrcNibCnt.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <rxCrcNibCnt> compiled.
+Entity <rxCrcNibCnt> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/nibshiftout.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <nibshiftout> compiled.
+Entity <nibshiftout> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/colretrycnt.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <colretrycnt> compiled.
+Entity <colretrycnt> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/colwindownibcnt.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <colwindownibcnt> compiled.
+Entity <colwindownibcnt> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/jamtxnibcnt.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <jamtxnibcnt> compiled.
+Entity <jamtxnibcnt> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ethernetlite.vhd" in Library xps_ethernetlite_v2_00_b.
+Entity <xps_ethernetlite> compiled.
+Entity <xps_ethernetlite> (Architecture <imp>) compiled.
+Compiling vhdl file "/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/hdl/ethernet_mac_wrapper.vhd" in Library work.
+Entity <ethernet_mac_wrapper> compiled.
+Entity <ethernet_mac_wrapper> (Architecture <STRUCTURE>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/rdpfifo_v1_01_b/hdl/vhdl/rdpfifo_top.vhd" in Library rdpfifo_v1_01_b.
+Entity <rdpfifo_top> compiled.
+Entity <rdpfifo_top> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v1_01_b/hdl/vhdl/wrpfifo_top.vhd" in Library wrpfifo_v1_01_b.
+Entity <wrpfifo_top> compiled.
+Entity <wrpfifo_top> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/interrupt_control_v1_00_a/hdl/vhdl/interrupt_control.vhd" in Library interrupt_control_v1_00_a.
+Entity <interrupt_control> compiled.
+Entity <interrupt_control> (Architecture <implementation>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ethernet_mac_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <xps_ethernetlite> in library <xps_ethernetlite_v2_00_b> (architecture <imp>) with generics.
+	C_BASEADDR = "10000001000000000000000000000000"
+	C_DUPLEX = 1
+	C_FAMILY = "virtex2p"
+	C_HIGHADDR = "10000001000000001111111111111111"
+	C_RX_PING_PONG = 1
+	C_SPLB_AWIDTH = 32
+	C_SPLB_CLK_PERIOD_PS = 10000
+	C_SPLB_DWIDTH = 64
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 32
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+	C_SPLB_SUPPORT_BURSTS = 0
+	C_TX_PING_PONG = 1
+
+Analyzing hierarchy for entity <xemac> in library <xps_ethernetlite_v2_00_b> (architecture <imp>) with generics.
+	C_BASEADDR = "10000001000000000000000000000000"
+	C_DUPLEX = 1
+	C_FAMILY = "virtex2p"
+	C_HIGHADDR = "10000001000000001111111111111111"
+	C_RX_PING_PONG = 1
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 64
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 32
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+	C_TX_PING_PONG = 1
+	NODE_MAC = "000000000000000001011110000000001111101011001110"
+
+Analyzing hierarchy for entity <xps_ipif_ssp1> in library <xps_ethernetlite_v2_00_b> (architecture <imp>) with generics.
+	C_BASEADDR = "10000001000000000000000000000000"
+	C_FAMILY = "virtex2p"
+	C_HIGHADDR = "10000001000000001111111111111111"
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 64
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 32
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+
+Analyzing hierarchy for entity <emac> in library <xps_ethernetlite_v2_00_b> (architecture <imp>) with generics.
+	C_DUPLEX = 1
+	C_FAMILY = "virtex2p"
+	NODE_MAC = "000000000000000001011110000000001111101011001110"
+
+Analyzing hierarchy for entity <emac_dpram> in library <xps_ethernetlite_v2_00_b> (architecture <imp>) with generics.
+	C_FAMILY = "virtex2p"
+
+Analyzing hierarchy for entity <plbv46_slave_single> in library <plbv46_slave_single_v1_00_a> (architecture <implementation>) with generics.
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000001000000000000000000000000",
+	                          "0000000000000000000000000000000010000001000000001111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_FAMILY = "virtex2p"
+	C_INCLUDE_DPHASE_TIMER = 1
+	C_SIPIF_DWIDTH = 32
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 64
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+
+Analyzing hierarchy for entity <receive> in library <xps_ethernetlite_v2_00_b> (architecture <imp>) with generics.
+	C_DUPLEX = 1
+	C_FAMILY = "virtex2p"
+
+Analyzing hierarchy for entity <transmit> in library <xps_ethernetlite_v2_00_b> (architecture <imp>) with generics.
+	C_DUPLEX = 1
+	C_FAMILY = "virtex2p"
+
+Analyzing hierarchy for entity <MacAddrRAM> in library <xps_ethernetlite_v2_00_b> (architecture <imp>) with generics.
+	Filler = "0000000000000000"
+	MACAddr = "000000000000000001011110000000001111101011001110"
+
+Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_single_v1_00_a> (architecture <implementation>) with generics.
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000001000000000000000000000000",
+	                          "0000000000000000000000000000000010000001000000001111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_DPHASE_TIMEOUT = 128
+	C_FAMILY = "virtex2p"
+	C_INCLUDE_DPHASE_TIMER = 1
+	C_IPIF_ABUS_WIDTH = 32
+	C_IPIF_DBUS_WIDTH = 32
+	C_PLB_MID_WIDTH = 1
+	C_PLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+WARNING:Xst:1748 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/proc_common_pkg.vhd" line 281: VHDL Assertion Statement with non constant condition is ignored.
+
+Analyzing hierarchy for entity <rx_state> in library <xps_ethernetlite_v2_00_b> (architecture <imp>) with generics.
+	C_DUPLEX = 1
+
+Analyzing hierarchy for entity <rx_intrfce> in library <xps_ethernetlite_v2_00_b> (architecture <implementation>).
+
+Analyzing hierarchy for entity <CRCGenrx> in library <xps_ethernetlite_v2_00_b> (architecture <arch1>).
+
+Analyzing hierarchy for entity <CRCGentx> in library <xps_ethernetlite_v2_00_b> (architecture <arch1>).
+
+Analyzing hierarchy for entity <tx_intrfce> in library <xps_ethernetlite_v2_00_b> (architecture <implementation>).
+
+Analyzing hierarchy for entity <mux_onehot_f> in library <proc_common_v2_00_a> (architecture <imp>) with generics.
+	C_DW = 4
+	C_FAMILY = "virtex2p"
+	C_NB = 6
+
+Analyzing hierarchy for entity <ld_arith_reg> in library <proc_common_v2_00_a> (architecture <imp>) with generics.
+	C_ADD_SUB_NOT = false
+	C_AD_OFFSET = 0
+	C_AD_WIDTH = 12
+	C_LD_OFFSET = 0
+	C_LD_WIDTH = 12
+	C_REG_WIDTH = 12
+	C_RESET_VALUE = "000000000000"
+
+Analyzing hierarchy for entity <tx_state_3> in library <xps_ethernetlite_v2_00_b> (architecture <implementation>) with generics.
+	C_DUPLEX = 1
+
+Analyzing hierarchy for entity <deferral> in library <xps_ethernetlite_v2_00_b> (architecture <implementation>).
+
+Analyzing hierarchy for entity <ld_arith_reg> in library <proc_common_v2_00_a> (architecture <imp>) with generics.
+	C_ADD_SUB_NOT = true
+	C_AD_OFFSET = 0
+	C_AD_WIDTH = 12
+	C_LD_OFFSET = 0
+	C_LD_WIDTH = 12
+	C_REG_WIDTH = 12
+	C_RESET_VALUE = "000000000000"
+
+Analyzing hierarchy for entity <ld_arith_reg> in library <proc_common_v2_00_a> (architecture <imp>) with generics.
+	C_ADD_SUB_NOT = false
+	C_AD_OFFSET = 0
+	C_AD_WIDTH = 4
+	C_LD_OFFSET = 0
+	C_LD_WIDTH = 4
+	C_REG_WIDTH = 4
+	C_RESET_VALUE = "1000"
+
+Analyzing hierarchy for entity <RAM16x4> in library <xps_ethernetlite_v2_00_b> (architecture <imp>) with generics.
+	INIT_00 = "0000000000000000"
+	INIT_01 = "1110010100000000"
+	INIT_02 = "1010111111101100"
+	INIT_03 = "0000000000000000"
+
+Analyzing hierarchy for entity <plb_address_decoder> in library <plbv46_slave_single_v1_00_a> (architecture <IMP>) with generics.
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000001000000000000000000000000",
+	                          "0000000000000000000000000000000010000001000000001111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS_AWIDTH = 32
+	C_FAMILY = "nofamily"
+	C_SPLB_P2P = 0
+WARNING:Xst:1748 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/proc_common_pkg.vhd" line 281: VHDL Assertion Statement with non constant condition is ignored.
+WARNING:Xst:1748 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/proc_common_pkg.vhd" line 281: VHDL Assertion Statement with non constant condition is ignored.
+
+Analyzing hierarchy for entity <counter_f> in library <proc_common_v2_00_a> (architecture <imp>) with generics.
+	C_FAMILY = "nofamily"
+	C_NUM_BITS = 8
+
+Analyzing hierarchy for entity <CRCNibShiftReg> in library <xps_ethernetlite_v2_00_b> (architecture <implementation>).
+
+Analyzing hierarchy for entity <cntr5bit> in library <xps_ethernetlite_v2_00_b> (architecture <implementation>).
+
+Analyzing hierarchy for entity <defer_state> in library <xps_ethernetlite_v2_00_b> (architecture <implementation>).
+
+Analyzing hierarchy for entity <pselect_f> in library <proc_common_v2_00_a> (architecture <imp>) with generics.
+	C_AB = 16
+	C_AW = 32
+	C_BAR = "10000001000000000000000000000000"
+	C_FAMILY = "nofamily"
+
+Analyzing hierarchy for entity <or_gate128> in library <proc_common_v2_00_a> (architecture <imp>) with generics.
+	C_BUS_WIDTH = 1
+	C_OR_WIDTH = 1
+	C_USE_LUT_OR = false
+
+Analyzing hierarchy for entity <or_muxcy> in library <proc_common_v2_00_a> (architecture <implementation>) with generics.
+	C_NUM_BITS = 1
+
+WARNING:Xst:2591 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xemac.vhd" line 691: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ethernet_mac_wrapper> in library <work> (Architecture <STRUCTURE>).
+WARNING:Xst:37 - Detected unknown constraint/property "ALERT". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "HDL". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "IMP_NETLIST". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "IP_GROUP". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "IPTYPE". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "STYLE". This constraint/property is not supported by the current software release and will be ignored.
+    Set user-defined property "USELOWSKEWLINES =  yes" for signal <PHY_tx_clk> in unit <xps_ethernetlite>.
+    Set user-defined property "USELOWSKEWLINES =  yes" for signal <PHY_rx_clk> in unit <xps_ethernetlite>.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_maxfan = 10000" for signal <SPLB_Clk> in unit <xps_ethernetlite>.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_maxfan = 10000" for signal <SPLB_Rst> in unit <xps_ethernetlite>.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "ALERT". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "HDL". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "IMP_NETLIST". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "IPTYPE". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "IP_GROUP". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "STYLE". This constraint/property is not supported by the current software release and will be ignored.
+Entity <ethernet_mac_wrapper> analyzed. Unit <ethernet_mac_wrapper> generated.
+
+Analyzing generic Entity <xps_ethernetlite> in library <xps_ethernetlite_v2_00_b> (Architecture <imp>).
+	C_BASEADDR = "10000001000000000000000000000000"
+	C_DUPLEX = 1
+	C_FAMILY = "virtex2p"
+	C_HIGHADDR = "10000001000000001111111111111111"
+	C_RX_PING_PONG = 1
+	C_SPLB_AWIDTH = 32
+	C_SPLB_CLK_PERIOD_PS = 10000
+	C_SPLB_DWIDTH = 64
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 32
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+	C_SPLB_SUPPORT_BURSTS = 0
+	C_TX_PING_PONG = 1
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_maxfan = 10000" for signal <SPLB_Clk> in unit <xps_ethernetlite>.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_maxfan = 10000" for signal <SPLB_Rst> in unit <xps_ethernetlite>.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ethernetlite.vhd" line 455: Instantiating black box module <FDRE>.
+    Set user-defined property "iob =  true" for instance <IOFFS_GEN[3].RX_FF_I> in unit <xps_ethernetlite>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ethernetlite.vhd" line 463: Instantiating black box module <FDRE>.
+    Set user-defined property "iob =  true" for instance <IOFFS_GEN[3].TX_FF_I> in unit <xps_ethernetlite>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ethernetlite.vhd" line 455: Instantiating black box module <FDRE>.
+    Set user-defined property "iob =  true" for instance <IOFFS_GEN[2].RX_FF_I> in unit <xps_ethernetlite>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ethernetlite.vhd" line 463: Instantiating black box module <FDRE>.
+    Set user-defined property "iob =  true" for instance <IOFFS_GEN[2].TX_FF_I> in unit <xps_ethernetlite>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ethernetlite.vhd" line 455: Instantiating black box module <FDRE>.
+    Set user-defined property "iob =  true" for instance <IOFFS_GEN[1].RX_FF_I> in unit <xps_ethernetlite>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ethernetlite.vhd" line 463: Instantiating black box module <FDRE>.
+    Set user-defined property "iob =  true" for instance <IOFFS_GEN[1].TX_FF_I> in unit <xps_ethernetlite>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ethernetlite.vhd" line 455: Instantiating black box module <FDRE>.
+    Set user-defined property "iob =  true" for instance <IOFFS_GEN[0].RX_FF_I> in unit <xps_ethernetlite>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ethernetlite.vhd" line 463: Instantiating black box module <FDRE>.
+    Set user-defined property "iob =  true" for instance <IOFFS_GEN[0].TX_FF_I> in unit <xps_ethernetlite>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ethernetlite.vhd" line 478: Instantiating black box module <FDRE>.
+    Set user-defined property "iob =  true" for instance <IOFFS_GEN2.DVD_FF> in unit <xps_ethernetlite>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ethernetlite.vhd" line 486: Instantiating black box module <FDRE>.
+    Set user-defined property "iob =  true" for instance <IOFFS_GEN2.RER_FF> in unit <xps_ethernetlite>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ethernetlite.vhd" line 494: Instantiating black box module <FDRE>.
+    Set user-defined property "iob =  true" for instance <IOFFS_GEN2.TEN_FF> in unit <xps_ethernetlite>.
+Entity <xps_ethernetlite> analyzed. Unit <xps_ethernetlite> generated.
+
+Analyzing generic Entity <xemac> in library <xps_ethernetlite_v2_00_b> (Architecture <imp>).
+	C_BASEADDR = "10000001000000000000000000000000"
+	C_DUPLEX = 1
+	C_FAMILY = "virtex2p"
+	C_HIGHADDR = "10000001000000001111111111111111"
+	C_RX_PING_PONG = 1
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 64
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 32
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+	C_TX_PING_PONG = 1
+	NODE_MAC = "000000000000000001011110000000001111101011001110"
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xemac.vhd" line 660: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xemac.vhd" line 691: Instantiating black box module <SRL16E>.
+    Set user-defined property "INIT =  1111" for instance <TX_PONG_GEN.PP_TOG_LUT_I> in unit <xemac>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xemac.vhd" line 758: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xemac.vhd" line 792: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xemac.vhd" line 803: Instantiating black box module <LUT4>.
+    Set user-defined property "INIT =  8000" for instance <GIE_EN_1_I> in unit <xemac>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xemac.vhd" line 814: Instantiating black box module <LUT4>.
+    Set user-defined property "INIT =  8000" for instance <GIE_EN_2_I> in unit <xemac>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xemac.vhd" line 825: Instantiating black box module <LUT4>.
+    Set user-defined property "INIT =  0100" for instance <GIE_EN_3_I> in unit <xemac>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xemac.vhd" line 836: Instantiating black box module <LUT4>.
+    Set user-defined property "INIT =  8000" for instance <GIE_EN_I> in unit <xemac>.
+Entity <xemac> analyzed. Unit <xemac> generated.
+
+Analyzing generic Entity <xps_ipif_ssp1> in library <xps_ethernetlite_v2_00_b> (Architecture <imp>).
+	C_BASEADDR = "10000001000000000000000000000000"
+	C_FAMILY = "virtex2p"
+	C_HIGHADDR = "10000001000000001111111111111111"
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 64
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 32
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+WARNING:Xst:753 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ipif_ssp1.vhd" line 256: Unconnected output port 'Bus2IP_RNW' of component 'plbv46_slave_single'.
+WARNING:Xst:753 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ipif_ssp1.vhd" line 256: Unconnected output port 'Bus2IP_BE' of component 'plbv46_slave_single'.
+WARNING:Xst:753 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ipif_ssp1.vhd" line 256: Unconnected output port 'Bus2IP_CS' of component 'plbv46_slave_single'.
+Entity <xps_ipif_ssp1> analyzed. Unit <xps_ipif_ssp1> generated.
+
+Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v1_00_a> (Architecture <implementation>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000001000000000000000000000000",
+	                          "0000000000000000000000000000000010000001000000001111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_FAMILY = "virtex2p"
+	C_INCLUDE_DPHASE_TIMER = 1
+	C_SIPIF_DWIDTH = 32
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 64
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+Entity <plbv46_slave_single> analyzed. Unit <plbv46_slave_single> generated.
+
+Analyzing generic Entity <plb_slave_attachment> in library <plbv46_slave_single_v1_00_a> (Architecture <implementation>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000001000000000000000000000000",
+	                          "0000000000000000000000000000000010000001000000001111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_DPHASE_TIMEOUT = 128
+	C_FAMILY = "virtex2p"
+	C_INCLUDE_DPHASE_TIMER = 1
+	C_IPIF_ABUS_WIDTH = 32
+	C_IPIF_DBUS_WIDTH = 32
+	C_PLB_MID_WIDTH = 1
+	C_PLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+WARNING:Xst:1748 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/proc_common_pkg.vhd" line 281: VHDL Assertion Statement with non constant condition is ignored.
+WARNING:Xst:753 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_00_a/hdl/vhdl/plb_slave_attachment.vhd" line 1192: Unconnected output port 'Count_Out' of component 'counter_f'.
+Entity <plb_slave_attachment> analyzed. Unit <plb_slave_attachment> generated.
+
+Analyzing generic Entity <plb_address_decoder> in library <plbv46_slave_single_v1_00_a> (Architecture <IMP>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000001000000000000000000000000",
+	                          "0000000000000000000000000000000010000001000000001111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS_AWIDTH = 32
+	C_FAMILY = "nofamily"
+	C_SPLB_P2P = 0
+WARNING:Xst:1748 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/proc_common_pkg.vhd" line 281: VHDL Assertion Statement with non constant condition is ignored.
+WARNING:Xst:1748 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/proc_common_pkg.vhd" line 281: VHDL Assertion Statement with non constant condition is ignored.
+Entity <plb_address_decoder> analyzed. Unit <plb_address_decoder> generated.
+
+Analyzing generic Entity <pselect_f> in library <proc_common_v2_00_a> (Architecture <imp>).
+	C_AB = 16
+	C_AW = 32
+	C_BAR = "10000001000000000000000000000000"
+	C_FAMILY = "nofamily"
+Entity <pselect_f> analyzed. Unit <pselect_f> generated.
+
+Analyzing generic Entity <or_gate128> in library <proc_common_v2_00_a> (Architecture <imp>).
+	C_BUS_WIDTH = 1
+	C_OR_WIDTH = 1
+	C_USE_LUT_OR = false
+Entity <or_gate128> analyzed. Unit <or_gate128> generated.
+
+Analyzing generic Entity <or_muxcy> in library <proc_common_v2_00_a> (Architecture <implementation>).
+	C_NUM_BITS = 1
+Entity <or_muxcy> analyzed. Unit <or_muxcy> generated.
+
+Analyzing generic Entity <counter_f> in library <proc_common_v2_00_a> (Architecture <imp>).
+	C_FAMILY = "nofamily"
+	C_NUM_BITS = 8
+Entity <counter_f> analyzed. Unit <counter_f> generated.
+
+Analyzing generic Entity <emac> in library <xps_ethernetlite_v2_00_b> (Architecture <imp>).
+	C_DUPLEX = 1
+	C_FAMILY = "virtex2p"
+	NODE_MAC = "000000000000000001011110000000001111101011001110"
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/emac.vhd" line 314: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/emac.vhd" line 323: Instantiating black box module <FDR>.
+Entity <emac> analyzed. Unit <emac> generated.
+
+Analyzing generic Entity <receive> in library <xps_ethernetlite_v2_00_b> (Architecture <imp>).
+	C_DUPLEX = 1
+	C_FAMILY = "virtex2p"
+Entity <receive> analyzed. Unit <receive> generated.
+
+Analyzing generic Entity <rx_state> in library <xps_ethernetlite_v2_00_b> (Architecture <imp>).
+	C_DUPLEX = 1
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 400: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 433: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 458: Instantiating black box module <FDS>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 473: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 493: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 508: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 526: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 544: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 749: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 768: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 787: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 806: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 825: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 844: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 863: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 882: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 901: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 920: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 939: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 959: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 977: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 991: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 1005: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 1024: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 1047: Instantiating black box module <FDR>.
+WARNING:Xst:819 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd" line 1069: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <readDestAdrNib1>
+Entity <rx_state> analyzed. Unit <rx_state> generated.
+
+Analyzing Entity <rx_intrfce> in library <xps_ethernetlite_v2_00_b> (Architecture <implementation>).
+Entity <rx_intrfce> analyzed. Unit <rx_intrfce> generated.
+
+Analyzing Entity <CRCGenrx> in library <xps_ethernetlite_v2_00_b> (Architecture <arch1>).
+Entity <CRCGenrx> analyzed. Unit <CRCGenrx> generated.
+
+Analyzing generic Entity <transmit> in library <xps_ethernetlite_v2_00_b> (Architecture <imp>).
+	C_DUPLEX = 1
+	C_FAMILY = "virtex2p"
+WARNING:Xst:753 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/transmit_2.vhd" line 309: Unconnected output port 'fifo_rd_ack' of component 'tx_intrfce'.
+WARNING:Xst:753 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/transmit_2.vhd" line 309: Unconnected output port 'fifo_almost_empty' of component 'tx_intrfce'.
+Entity <transmit> analyzed. Unit <transmit> generated.
+
+Analyzing Entity <CRCGentx> in library <xps_ethernetlite_v2_00_b> (Architecture <arch1>).
+Entity <CRCGentx> analyzed. Unit <CRCGentx> generated.
+
+Analyzing Entity <CRCNibShiftReg> in library <xps_ethernetlite_v2_00_b> (Architecture <implementation>).
+Entity <CRCNibShiftReg> analyzed. Unit <CRCNibShiftReg> generated.
+
+Analyzing Entity <tx_intrfce> in library <xps_ethernetlite_v2_00_b> (Architecture <implementation>).
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_intrfce.vhd" line 242: Instantiating black box module <FDR>.
+Entity <tx_intrfce> analyzed. Unit <tx_intrfce> generated.
+
+Analyzing generic Entity <mux_onehot_f> in library <proc_common_v2_00_a> (Architecture <imp>).
+	C_DW = 4
+	C_FAMILY = "virtex2p"
+	C_NB = 6
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd" line 211: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd" line 211: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd" line 211: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd" line 211: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd" line 211: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd" line 211: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd" line 211: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd" line 211: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd" line 211: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd" line 211: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd" line 211: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd" line 211: Instantiating black box module <MUXCY>.
+Entity <mux_onehot_f> analyzed. Unit <mux_onehot_f> generated.
+
+Analyzing generic Entity <ld_arith_reg.1> in library <proc_common_v2_00_a> (Architecture <imp>).
+	C_ADD_SUB_NOT = false
+	C_AD_OFFSET = 0
+	C_AD_WIDTH = 12
+	C_LD_OFFSET = 0
+	C_LD_WIDTH = 12
+	C_REG_WIDTH = 12
+	C_RESET_VALUE = "000000000000"
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+Entity <ld_arith_reg.1> analyzed. Unit <ld_arith_reg.1> generated.
+
+Analyzing generic Entity <tx_state_3> in library <xps_ethernetlite_v2_00_b> (Architecture <implementation>).
+	C_DUPLEX = 1
+WARNING:Xst:753 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 451: Unconnected output port 'cntout' of component 'cntr5bit'.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 497: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 518: Instantiating black box module <FDS>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 537: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 552: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 567: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 582: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 597: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 612: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 630: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 648: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 666: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 683: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 705: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 721: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 737: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 758: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 774: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 794: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 812: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 835: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 851: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 872: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 890: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 907: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 922: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 937: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 952: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 967: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 982: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 997: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 1012: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 1027: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 1042: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 1057: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 1072: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 1087: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 1102: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 1117: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 1132: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 1147: Instantiating black box module <FDR>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd" line 1162: Instantiating black box module <FDR>.
+Entity <tx_state_3> analyzed. Unit <tx_state_3> generated.
+
+Analyzing Entity <cntr5bit> in library <xps_ethernetlite_v2_00_b> (Architecture <implementation>).
+Entity <cntr5bit> analyzed. Unit <cntr5bit> generated.
+
+Analyzing Entity <deferral> in library <xps_ethernetlite_v2_00_b> (Architecture <implementation>).
+WARNING:Xst:753 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/deferral.vhd" line 183: Unconnected output port 'cntout' of component 'cntr5bit'.
+WARNING:Xst:753 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/deferral.vhd" line 197: Unconnected output port 'cntout' of component 'cntr5bit'.
+Entity <deferral> analyzed. Unit <deferral> generated.
+
+Analyzing Entity <defer_state> in library <xps_ethernetlite_v2_00_b> (Architecture <implementation>).
+Entity <defer_state> analyzed. Unit <defer_state> generated.
+
+Analyzing generic Entity <ld_arith_reg.2> in library <proc_common_v2_00_a> (Architecture <imp>).
+	C_ADD_SUB_NOT = true
+	C_AD_OFFSET = 0
+	C_AD_WIDTH = 12
+	C_LD_OFFSET = 0
+	C_LD_WIDTH = 12
+	C_REG_WIDTH = 12
+	C_RESET_VALUE = "000000000000"
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+Entity <ld_arith_reg.2> analyzed. Unit <ld_arith_reg.2> generated.
+
+Analyzing generic Entity <ld_arith_reg.3> in library <proc_common_v2_00_a> (Architecture <imp>).
+	C_ADD_SUB_NOT = false
+	C_AD_OFFSET = 0
+	C_AD_WIDTH = 4
+	C_LD_OFFSET = 0
+	C_LD_WIDTH = 4
+	C_REG_WIDTH = 4
+	C_RESET_VALUE = "1000"
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 269: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 232: Instantiating black box module <MULT_AND>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 242: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 253: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd" line 279: Instantiating black box module <FDSE>.
+Entity <ld_arith_reg.3> analyzed. Unit <ld_arith_reg.3> generated.
+
+Analyzing generic Entity <MacAddrRAM> in library <xps_ethernetlite_v2_00_b> (Architecture <imp>).
+	Filler = "0000000000000000"
+	MACAddr = "000000000000000001011110000000001111101011001110"
+Entity <MacAddrRAM> analyzed. Unit <MacAddrRAM> generated.
+
+Analyzing generic Entity <RAM16x4> in library <xps_ethernetlite_v2_00_b> (Architecture <imp>).
+	INIT_00 = "0000000000000000"
+	INIT_01 = "1110010100000000"
+	INIT_02 = "1010111111101100"
+	INIT_03 = "0000000000000000"
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/ram16x4.vhd" line 197: Instantiating black box module <ram16x1s>.
+    Set user-defined property "INIT =  0220" for instance <ram16x1_0> in unit <RAM16x4>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/ram16x4.vhd" line 207: Instantiating black box module <ram16x1s>.
+    Set user-defined property "INIT =  0710" for instance <ram16x1_1> in unit <RAM16x4>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/ram16x4.vhd" line 217: Instantiating black box module <ram16x1s>.
+    Set user-defined property "INIT =  0e30" for instance <ram16x1_2> in unit <RAM16x4>.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/ram16x4.vhd" line 227: Instantiating black box module <ram16x1s>.
+    Set user-defined property "INIT =  0f10" for instance <ram16x1_3> in unit <RAM16x4>.
+Entity <RAM16x4> analyzed. Unit <RAM16x4> generated.
+
+Analyzing generic Entity <emac_dpram> in library <xps_ethernetlite_v2_00_b> (Architecture <imp>).
+	C_FAMILY = "virtex2p"
+WARNING:Xst:753 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/emac_dpram.vhd" line 289: Unconnected output port 'DOPB' of component 'RAMB16_S4_S36'.
+WARNING:Xst:2211 - "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/emac_dpram.vhd" line 289: Instantiating black box module <RAMB16_S4_S36>.
+    Set user-defined property "WRITE_MODE_A =  READ_FIRST" for instance <I_DPB16_4_9> in unit <emac_dpram>.
+    Set user-defined property "WRITE_MODE_B =  READ_FIRST" for instance <I_DPB16_4_9> in unit <emac_dpram>.
+Entity <emac_dpram> analyzed. Unit <emac_dpram> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <counter_f>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/counter_f.vhd".
+    Found 9-bit register for signal <icount_out>.
+    Found 9-bit subtractor for signal <icount_out$sub0000> created at line 248.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <counter_f> synthesized.
+
+
+Synthesizing Unit <pselect_f>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/pselect_f.vhd".
+WARNING:Xst:647 - Input <A<16:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <pselect_f> synthesized.
+
+
+Synthesizing Unit <or_muxcy>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/or_muxcy.vhd".
+Unit <or_muxcy> synthesized.
+
+
+Synthesizing Unit <CRCGenrx>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/crcgenrx.vhd".
+    Found 32-bit register for signal <crc_local>.
+    Found 1-bit xor2 for signal <crc_out$xor0000> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0001> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0002> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0003> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0004> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0005> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0006> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0007> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0008> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0009> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0010> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0011> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0012> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0013> created at line 228.
+    Found 1-bit xor3 for signal <crc_out$xor0014> created at line 228.
+    Found 1-bit xor3 for signal <crc_out$xor0015> created at line 228.
+    Found 1-bit xor3 for signal <crc_out$xor0016> created at line 228.
+    Found 1-bit xor3 for signal <crc_out$xor0017> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0018> created at line 228.
+    Found 1-bit xor3 for signal <crc_out$xor0019> created at line 228.
+    Found 1-bit xor3 for signal <crc_out$xor0020> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0021> created at line 228.
+    Found 1-bit xor3 for signal <crc_out$xor0022> created at line 228.
+    Found 1-bit xor3 for signal <crc_out$xor0023> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0024> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0025> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0026> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0027> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0028> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0029> created at line 228.
+    Found 1-bit xor2 for signal <crc_out$xor0034> created at line 228.
+    Found 1-bit xor2 for signal <x$xor0000> created at line 224.
+    Found 1-bit xor2 for signal <x$xor0001> created at line 224.
+    Found 1-bit xor2 for signal <x$xor0002> created at line 224.
+    Found 1-bit xor2 for signal <x$xor0003> created at line 224.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   8 Xor(s).
+Unit <CRCGenrx> synthesized.
+
+
+Synthesizing Unit <CRCNibShiftReg>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/crcnibshiftreg.vhd".
+    Found 32-bit register for signal <nibData>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <CRCNibShiftReg> synthesized.
+
+
+Synthesizing Unit <cntr5bit>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/cntr5bit.vhd".
+    Found 5-bit down counter for signal <count>.
+    Found 1-bit register for signal <zero_i>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <cntr5bit> synthesized.
+
+
+Synthesizing Unit <defer_state>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/defer_state.vhd".
+    Found finite state machine <FSM_0> for signal <thisState>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | thisState$or0000 (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | loadcntr                                       |
+    | Power Up State     | loadcntr                                       |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <defer_state> synthesized.
+
+
+Synthesizing Unit <emac_dpram>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/emac_dpram.vhd".
+Unit <emac_dpram> synthesized.
+
+
+Synthesizing Unit <or_gate128>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/or_gate128.vhd".
+WARNING:Xst:1780 - Signal <test> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <or_gate128> synthesized.
+
+
+Synthesizing Unit <rx_state>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_state_2.vhd".
+WARNING:Xst:647 - Input <Emac_rx_rd_data_d1<4:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Collision> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Rx_DPM_rd_data<1:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <stay_readDestAdrNib9_t> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <stay_readDestAdrNib8_t> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <stay_readDestAdrNib7_t> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <stay_readDestAdrNib6_t> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <stay_readDestAdrNib5_t> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <stay_readDestAdrNib4_t> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <stay_readDestAdrNib3_t> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <stay_readDestAdrNib2_t> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <stay_readDestAdrNib12_t> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <stay_readDestAdrNib11_t> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <stay_readDestAdrNib10_t> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <readDestAdrNib1to12_D3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <readDestAdrNib1to12_D2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <readDestAdrNib1to12_D1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <readDestAdrNib1to12_D0> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <readDestAdrNib1to12> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rdDestAddrNib_eq_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rState_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <goto_readDestAdrNib9_t> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <goto_readDestAdrNib8_t> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <goto_readDestAdrNib7_t> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <goto_readDestAdrNib6_t> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <goto_readDestAdrNib5_t> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <goto_readDestAdrNib4_t> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <goto_readDestAdrNib3_t> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <goto_readDestAdrNib2_t> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <goto_readDestAdrNib12_t> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <goto_readDestAdrNib11_t> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <goto_readDestAdrNib10_t> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <rdDestAddrNib_D_t_q>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <rdDestAddrNib_D_t_q> of Case statement line 645 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <rdDestAddrNib_D_t_q> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <rdDestAddrNib_D_t>.
+    Found 4-bit register for signal <Mac_addr_ram_addr_rd>.
+    Found 1-bit register for signal <checkingBroadcastAdr_reg>.
+    Found 4-bit register for signal <rdDestAddrNib>.
+    Found 13-bit register for signal <rdDestAddrNib_D_t_q>.
+    Found 4-bit comparator equal for signal <ucastAddrGood$cmp_eq0000> created at line 1217.
+    Summary:
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <rx_state> synthesized.
+
+
+Synthesizing Unit <rx_intrfce>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/rx_intrfce.vhd".
+WARNING:Xst:647 - Input <Phy_tx_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Phy_tx_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Phy_tx_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <InternalWrapEn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <wrap_wr_en> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wrap_rd_ack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wrap_fifo_full> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wrap_fifo_empty> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wrap_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <txBusCombo> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <rx_intrfce> synthesized.
+
+
+Synthesizing Unit <CRCGentx>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/crcgentx.vhd".
+    Found 1-bit xor2 for signal <crc_out$xor0000> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0001> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0002> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0003> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0004> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0005> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0006> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0007> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0008> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0009> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0010> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0011> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0012> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0013> created at line 240.
+    Found 1-bit xor3 for signal <crc_out$xor0014> created at line 240.
+    Found 1-bit xor3 for signal <crc_out$xor0015> created at line 240.
+    Found 1-bit xor3 for signal <crc_out$xor0016> created at line 240.
+    Found 1-bit xor3 for signal <crc_out$xor0017> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0018> created at line 240.
+    Found 1-bit xor3 for signal <crc_out$xor0019> created at line 240.
+    Found 1-bit xor3 for signal <crc_out$xor0020> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0021> created at line 240.
+    Found 1-bit xor3 for signal <crc_out$xor0022> created at line 240.
+    Found 1-bit xor3 for signal <crc_out$xor0023> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0024> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0025> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0026> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0027> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0028> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0029> created at line 240.
+    Found 1-bit xor2 for signal <crc_out$xor0034> created at line 240.
+    Found 1-bit xor2 for signal <x$xor0000> created at line 236.
+    Found 1-bit xor2 for signal <x$xor0001> created at line 236.
+    Found 1-bit xor2 for signal <x$xor0002> created at line 236.
+    Found 1-bit xor2 for signal <x$xor0003> created at line 236.
+    Summary:
+	inferred   8 Xor(s).
+Unit <CRCGentx> synthesized.
+
+
+Synthesizing Unit <tx_intrfce>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_intrfce.vhd".
+WARNING:Xst:1305 - Output <fifo_rd_ack> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <fifo_almost_empty> is never assigned. Tied to value 0.
+Unit <tx_intrfce> synthesized.
+
+
+Synthesizing Unit <mux_onehot_f>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/mux_onehot_f.vhd".
+Unit <mux_onehot_f> synthesized.
+
+
+Synthesizing Unit <ld_arith_reg_1>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd".
+WARNING:Xst:646 - Signal <cry<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <ld_arith_reg_1> synthesized.
+
+
+Synthesizing Unit <tx_state_3>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/tx_state_3.vhd".
+WARNING:Xst:647 - Input <phyCollision> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <txRst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <busFifoWrNibbleCnt<0:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tx_DPM_rd_data<1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <waitdone_pre_sfd> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <retrying> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <mac_addr_ram_we>.
+    Found 4-bit register for signal <mac_addr_ram_addr_wr>.
+    Found 1-bit register for signal <busFifoWrCntRst_reg>.
+    Found 1-bit register for signal <phytx_en_reg>.
+    Found 1-bit register for signal <retrying_reg>.
+    Found 1-bit register for signal <txCrcEn_reg>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <tx_state_3> synthesized.
+
+
+Synthesizing Unit <deferral>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/deferral.vhd".
+Unit <deferral> synthesized.
+
+
+Synthesizing Unit <ld_arith_reg_2>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd".
+WARNING:Xst:646 - Signal <cry<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <ld_arith_reg_2> synthesized.
+
+
+Synthesizing Unit <ld_arith_reg_3>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v2_00_a/hdl/vhdl/ld_arith_reg.vhd".
+WARNING:Xst:646 - Signal <cry<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <ld_arith_reg_3> synthesized.
+
+
+Synthesizing Unit <RAM16x4>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/ram16x4.vhd".
+Unit <RAM16x4> synthesized.
+
+
+Synthesizing Unit <plb_address_decoder>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_00_a/hdl/vhdl/plb_address_decoder.vhd".
+WARNING:Xst:647 - Input <Bus_RNW_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Address_In_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Address_Valid_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <cs_s_h_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cs_ce_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <addr_out_s_h> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <addr_match_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <cs_out_i<0>>.
+    Found 1-bit register for signal <cs_out_s_h<0>>.
+    Found 1-bit register for signal <decode_hit_reg>.
+    Found 1-bit register for signal <rdce_out_i<0>>.
+    Found 1-bit register for signal <rnw_s_h>.
+    Found 1-bit register for signal <wrce_out_i<0>>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <plb_address_decoder> synthesized.
+
+
+Synthesizing Unit <receive>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/receive.vhd".
+WARNING:Xst:646 - Signal <fifo_full> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 6-bit register for signal <emac_rx_rd_data_d1>.
+    Found 1-bit register for signal <rxCrcEn_d1>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+Unit <receive> synthesized.
+
+
+Synthesizing Unit <transmit>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/transmit_2.vhd".
+WARNING:Xst:646 - Signal <txLateColnRst> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <txExcessDefrlRst> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <txComboColRetryCntRst_n> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <txComboColRetryCntRst> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <txColRetryCntRst_n> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <txColRetryCntEnbl> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <txCntEnbl> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pre_sfd_done> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <phy_tx_en_i_n> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <jam_rst> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <jamTxNibCntEnbl> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <jamTxComboNibCntEnbl> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <initBackoff> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bus_combo<4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <fifo_tx_en>.
+    Found 1-bit register for signal <phy_tx_en_i>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <transmit> synthesized.
+
+
+Synthesizing Unit <MacAddrRAM>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/macaddrram.vhd".
+Unit <MacAddrRAM> synthesized.
+
+
+Synthesizing Unit <emac>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/emac.vhd".
+WARNING:Xst:646 - Signal <adjustedPacketLength<0:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16-bit comparator greater for signal <adjustedPacketLength$cmp_gt0000> created at line 439.
+    Found 16-bit register for signal <mac_tx_frame_length>.
+    Found 1-bit register for signal <phy_tx_clk_d1>.
+    Found 1-bit register for signal <phy_tx_clk_d2>.
+    Found 12-bit up counter for signal <rxbuffer_addr>.
+    Found 12-bit register for signal <txbuffer_addr>.
+    Found 12-bit adder for signal <txbuffer_addr$addsub0000> created at line 380.
+    Found 1-bit register for signal <txClkEn>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <emac> synthesized.
+
+
+Synthesizing Unit <plb_slave_attachment>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_00_a/hdl/vhdl/plb_slave_attachment.vhd".
+WARNING:Xst:647 - Input <PLB_UABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <valid_plb_type> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <valid_plb_size> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <start_data_phase> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_wrdack_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_wrcomp_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_wait_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_rddack_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_rdcomp_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_data_ack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <set_sl_busy_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rd_ce_ld_enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clear_sl_rd_busy_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clear_sl_rd_busy> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clear_sl_busy_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clear_rd_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Register <sl_rdcomp_i> equivalent to <rd_clear_sl_busy> has been removed
+    Register <sl_rddack_i> equivalent to <rd_clear_sl_busy> has been removed
+    Register <sl_addrack_i> equivalent to <set_sl_busy> has been removed
+    Register <sl_wrdack_i> equivalent to <sl_wrcomp_i> has been removed
+    Register <wr_clear_sl_busy> equivalent to <sl_wrcomp_i> has been removed
+    Found 1-bit register for signal <addr_cntl_cs<0>>.
+    Found 1-bit register for signal <addr_cycle_flush>.
+    Found 32-bit register for signal <bus2ip_addr_i>.
+    Found 4-bit register for signal <bus2ip_be_i>.
+    Found 1-bit register for signal <bus2ip_rnw_i>.
+    Found 1-bit register for signal <data_timeout>.
+    Found 1-bit register for signal <master_id<31>>.
+    Found 32-bit register for signal <plb_abus_reg>.
+    Found 4-bit register for signal <plb_be_reg>.
+    Found 1-bit register for signal <plb_masterid_reg<0>>.
+    Found 1-bit register for signal <plb_pavalid_reg>.
+    Found 1-bit register for signal <plb_rnw_reg>.
+    Found 4-bit register for signal <plb_size_reg>.
+    Found 3-bit register for signal <plb_type_reg>.
+    Found 32-bit register for signal <plb_wrdbus_reg>.
+    Found 1-bit register for signal <rd_clear_sl_busy>.
+    Found 1-bit register for signal <set_sl_busy>.
+    Found 1-bit register for signal <sl_busy>.
+    Found 2-bit register for signal <sl_mbusy_i>.
+    Found 2-bit register for signal <sl_mrderr_i>.
+    Found 2-bit register for signal <sl_mwrerr_i>.
+    Found 32-bit register for signal <sl_rddbus_i>.
+    Found 1-bit register for signal <sl_rearbitrate_i>.
+    Found 1-bit register for signal <sl_wrcomp_i>.
+    Summary:
+	inferred 162 D-type flip-flop(s).
+Unit <plb_slave_attachment> synthesized.
+
+
+Synthesizing Unit <plbv46_slave_single>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_00_a/hdl/vhdl/plbv46_slave_single.vhd".
+WARNING:Xst:647 - Input <PLB_wrPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MSize> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_SAValid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_busLock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrDBus<32:63>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_reqPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_lockErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_TAttribute> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_abort> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <plbv46_slave_single> synthesized.
+
+
+Synthesizing Unit <xps_ipif_ssp1>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ipif_ssp1.vhd".
+WARNING:Xst:1780 - Signal <ssp1_Bus2IP_CE> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <xps_ipif_ssp1> synthesized.
+
+
+Synthesizing Unit <xemac>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xemac.vhd".
+WARNING:Xst:646 - Signal <temp_Bus2IP_Addr<0:18>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bus2ip_addr<11:12>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ZERO_IP2IP_ADDR> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Rx_idle> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <DPM_rd_ack>.
+    Found 1-bit register for signal <DPM_wr_ack>.
+    Found 1-bit register for signal <rx_pong_ping_l>.
+    Found 1-bit register for signal <tx_pong_ping_l>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <xemac> synthesized.
+
+
+Synthesizing Unit <xps_ethernetlite>.
+    Related source file is "/opt/Xilinx/10.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v2_00_b/hdl/vhdl/xps_ethernetlite.vhd".
+Unit <xps_ethernetlite> synthesized.
+
+
+Synthesizing Unit <ethernet_mac_wrapper>.
+    Related source file is "/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/hdl/ethernet_mac_wrapper.vhd".
+Unit <ethernet_mac_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 12-bit adder                                          : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 4
+ 12-bit up counter                                     : 1
+ 5-bit down counter                                    : 3
+# Registers                                            : 107
+ 1-bit register                                        : 91
+ 12-bit register                                       : 1
+ 13-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 5
+ 4-bit register                                        : 6
+ 6-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 2
+ 16-bit comparator greater                             : 1
+ 4-bit comparator equal                                : 1
+# Xors                                                 : 70
+ 1-bit xor2                                            : 54
+ 1-bit xor3                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_deferral_control/inst_deferral_state/thisState/FSM> on signal <thisState[1:2]> with gray encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ loadcntr      | 00
+ startifgp1cnt | 01
+ startifgp2cnt | 11
+ cntdone       | 10
+---------------------------
+Executing edif2ngd -noa "/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/implementation/ethernet_mac_wrapper/ethernetlite_v1_01_b_dmem_v2.edn" "/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/implementation/ethernetlite_v1_01_b_dmem_v2.ngo"
+Release 10.1.03 - edif2ngd K.39 (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (lin)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file </opt/Xilinx/10.1/EDK/data/edif2ngd.pfd> with
+local file </opt/Xilinx/10.1/ISE/data/edif2ngd.pfd>
+Writing module to
+"/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/implementation/ethernetlite_v1_0
+1_b_dmem_v2.ngo"...
+Loading core <ethernetlite_v1_01_b_dmem_v2> for timing and area information for instance <I_RX_FIFO>.
+Loading core <ethernetlite_v1_01_b_dmem_v2> for timing and area information for instance <I_TX_FIFO>.
+Loading device for application Rf_Device from file '2vp30.nph' in environment /opt/Xilinx/10.1/ISE:/opt/Xilinx/10.1/EDK.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 2
+ 12-bit adder                                          : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 4
+ 12-bit up counter                                     : 1
+ 5-bit down counter                                    : 3
+# Registers                                            : 429
+ Flip-Flops                                            : 429
+# Comparators                                          : 2
+ 16-bit comparator greater                             : 1
+ 4-bit comparator equal                                : 1
+# Xors                                                 : 70
+ 1-bit xor2                                            : 54
+ 1-bit xor3                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <sl_mwrerr_i_0> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sl_mwrerr_i_1> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sl_mrderr_i_0> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sl_mrderr_i_1> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <addr_cntl_cs_0> in Unit <plb_slave_attachment> is equivalent to the following FF/Latch, which will be removed : <addr_cycle_flush> 
+
+Optimizing unit <ethernet_mac_wrapper> ...
+
+Optimizing unit <counter_f> ...
+
+Optimizing unit <CRCGenrx> ...
+
+Optimizing unit <CRCNibShiftReg> ...
+
+Optimizing unit <rx_state> ...
+
+Optimizing unit <mux_onehot_f> ...
+
+Optimizing unit <ld_arith_reg_1> ...
+
+Optimizing unit <ld_arith_reg_2> ...
+
+Optimizing unit <ld_arith_reg_3> ...
+
+Optimizing unit <CRCGentx> ...
+
+Optimizing unit <tx_state_3> ...
+
+Optimizing unit <transmit> ...
+
+Optimizing unit <plb_slave_attachment> ...
+
+Optimizing unit <emac> ...
+
+Optimizing unit <xemac> ...
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/EMAC_I/RX/emac_rx_rd_data_d1_4> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/EMAC_I/RX/emac_rx_rd_data_d1_5> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_31> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_30> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_18> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_17> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_16> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/plb_be_reg_3> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/plb_be_reg_2> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/plb_be_reg_1> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/plb_be_reg_0> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_2> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_1> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_0> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_31> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_30> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_18> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_17> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_16> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_15> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_14> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_13> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_12> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_11> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_10> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_9> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_8> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_7> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_6> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_5> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_4> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_3> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_2> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_1> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_0> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+WARNING:Xst:2677 - Node <Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h_0> of sequential type is unconnected in block <ethernet_mac_wrapper>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_state_machine/state24a> in Unit <ethernet_mac_wrapper> is equivalent to the following FF/Latch : <Ethernet_MAC/XEMAC_I/TX_PONG_GEN.TX_DONE_D1_I> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/state21a> in Unit <ethernet_mac_wrapper> is equivalent to the following 2 FFs/Latches : <Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_state_machine/state19a> <Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_state_machine/state21a> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 415
+ Flip-Flops                                            : 415
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/ethernet_mac_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 286
+
+Cell Usage :
+# BELS                             : 876
+#      GND                         : 3
+#      INV                         : 7
+#      LUT1                        : 11
+#      LUT2                        : 66
+#      LUT2_D                      : 2
+#      LUT2_L                      : 6
+#      LUT3                        : 101
+#      LUT3_D                      : 2
+#      LUT3_L                      : 7
+#      LUT4                        : 399
+#      LUT4_D                      : 8
+#      LUT4_L                      : 6
+#      MULT_AND                    : 28
+#      MUXCY                       : 96
+#      MUXCY_D                     : 4
+#      MUXCY_L                     : 8
+#      MUXF5                       : 47
+#      VCC                         : 3
+#      XORCY                       : 72
+# FlipFlops/Latches                : 505
+#      FD                          : 2
+#      FDCE                        : 44
+#      FDE                         : 24
+#      FDPE                        : 22
+#      FDR                         : 208
+#      FDRE                        : 125
+#      FDRS                        : 5
+#      FDRSE                       : 14
+#      FDS                         : 13
+#      FDSE                        : 48
+# RAMS                             : 20
+#      RAM16X1D                    : 12
+#      RAM16X1S                    : 4
+#      RAMB16_S4_S36               : 4
+# Shift Registers                  : 1
+#      SRL16E                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2vp30ff896-7 
+
+ Number of Slices:                      420  out of  13696     3%  
+ Number of Slice Flip Flops:            494  out of  27392     1%  
+ Number of 4 input LUTs:                644  out of  27392     2%  
+    Number used as logic:               615
+    Number used as Shift registers:       1
+    Number used as RAMs:                 28
+ Number of IOs:                         286
+ Number of bonded IOBs:                   0  out of    556     0%  
+    IOB Flip Flops:                      11
+ Number of BRAMs:                         4  out of    136     2%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------+---------------------------------------------------------------------+-------+
+Clock Signal                                               | Clock buffer(FF name)                                               | Load  |
+-----------------------------------------------------------+---------------------------------------------------------------------+-------+
+PHY_tx_clk                                                 | NONE(Ethernet_MAC/IOFFS_GEN2.TEN_FF)                                | 31    |
+PHY_rx_clk                                                 | NONE(Ethernet_MAC/IOFFS_GEN2.RER_FF)                                | 31    |
+SPLB_Clk                                                   | NONE(Ethernet_MAC/XEMAC_I/EMAC_I/txClkEn)                           | 460   |
+Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/N0| NONE(Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU130)| 2     |
+Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/N0| NONE(Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU130)| 2     |
+-----------------------------------------------------------+---------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
+Control Signal                                                                                                             | Buffer(FF name)                                                     | Load  |
+---------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
+Ethernet_MAC/XEMAC_I/EMAC_I/RX/fifo_reset(Ethernet_MAC/XEMAC_I/EMAC_I/RX/fifo_reset1:O)                                    | NONE(Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU88) | 31    |
+Ethernet_MAC/XEMAC_I/EMAC_I/TX/txComboBusFifoRst(Ethernet_MAC/XEMAC_I/EMAC_I/TX/txComboBusFifoRst1:O)                      | NONE(Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU194)| 31    |
+Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/N0(Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/GND:G)| NONE(Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU237)| 2     |
+Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/N0(Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/GND:G)| NONE(Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU130)| 2     |
+---------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -7
+
+   Minimum period: 6.532ns (Maximum Frequency: 153.087MHz)
+   Minimum input arrival time before clock: 2.075ns
+   Maximum output required time after clock: 1.583ns
+   Maximum combinational path delay: 0.275ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PHY_tx_clk'
+  Clock period: 2.920ns (frequency: 342.413MHz)
+  Total number of paths / destination ports: 117 / 53
+-------------------------------------------------------------------------
+Delay:               2.920ns (Levels of Logic = 6)
+  Source:            Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU142 (FF)
+  Destination:       Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU142 (FF)
+  Source Clock:      PHY_tx_clk falling
+  Destination Clock: PHY_tx_clk falling
+
+  Data Path: Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU142 to Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_intrfce/I_TX_FIFO/BU142
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             9   0.370   0.537  BU142 (empty)
+     LUT4:I3->O            1   0.275   0.000  BU128 (N982)
+     MUXCY:S->O            1   0.334   0.000  BU129 (N986)
+     MUXCY:CI->O           1   0.036   0.000  BU132 (N985)
+     MUXCY:CI->O           1   0.036   0.000  BU135 (N984)
+     MUXCY_D:CI->LO        0   0.416   0.000  BU138 (N983)
+     XORCY:CI->O           1   0.708   0.000  BU141 (N989)
+     FDPE:D                    0.208          BU142
+    ----------------------------------------
+    Total                      2.920ns (2.383ns logic, 0.537ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SPLB_Clk'
+  Clock period: 6.532ns (frequency: 153.087MHz)
+  Total number of paths / destination ports: 16720 / 1040
+-------------------------------------------------------------------------
+Delay:               6.532ns (Levels of Logic = 8)
+  Source:            Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_state_machine/mac_addr_ram_we (FF)
+  Destination:       Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/Mac_addr_ram_addr_rd_1 (FF)
+  Source Clock:      SPLB_Clk rising
+  Destination Clock: SPLB_Clk rising
+
+  Data Path: Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_state_machine/mac_addr_ram_we to Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/Mac_addr_ram_addr_rd_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.370   0.496  Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_state_machine/mac_addr_ram_we (Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_tx_state_machine/mac_addr_ram_we)
+     LUT3:I2->O            8   0.275   0.478  Ethernet_MAC/XEMAC_I/EMAC_I/mac_addr_ram_addr<3>1 (Ethernet_MAC/XEMAC_I/EMAC_I/mac_addr_ram_addr<3>)
+     RAM16X1S:A0->O        1   0.694   0.429  Ethernet_MAC/XEMAC_I/EMAC_I/NODEMACADDRRAMI/ram16x4i/ram16x1_0 (Ethernet_MAC/XEMAC_I/EMAC_I/mac_addr_ram_data<3>)
+     LUT2:I1->O            1   0.275   0.349  Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/rdDestAddrNib_D_t_or000043 (Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/rdDestAddrNib_D_t_or000043)
+     LUT4_D:I2->O          3   0.275   0.415  Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/rdDestAddrNib_D_t_or000095 (Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/rdDestAddrNib_D_t_or0000)
+     LUT4_D:I2->O          9   0.275   0.517  Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/startReadDataNib_D12_1 (Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/startReadDataNib_D12)
+     LUT4:I2->O            3   0.275   0.533  Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/rdDestAddrNib_D_t<5>1 (Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/rdDestAddrNib_D_t<5>)
+     LUT2_L:I0->LO         1   0.275   0.118  Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/mac_addr_ram_addr_rd_D<1>_SW0 (N171)
+     LUT4:I2->O            1   0.275   0.000  Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/mac_addr_ram_addr_rd_D<1> (Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/mac_addr_ram_addr_rd_D<1>)
+     FDR:D                     0.208          Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/Mac_addr_ram_addr_rd_1
+    ----------------------------------------
+    Total                      6.532ns (3.197ns logic, 3.335ns route)
+                                       (48.9% logic, 51.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PHY_rx_clk'
+  Clock period: 2.916ns (frequency: 342.883MHz)
+  Total number of paths / destination ports: 114 / 68
+-------------------------------------------------------------------------
+Delay:               2.916ns (Levels of Logic = 6)
+  Source:            Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU194 (FF)
+  Destination:       Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU249 (FF)
+  Source Clock:      PHY_rx_clk falling
+  Destination Clock: PHY_rx_clk falling
+
+  Data Path: Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU194 to Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_intrfce/I_RX_FIFO/BU249
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.370   0.533  BU194 (N422)
+     LUT4:I0->O            1   0.275   0.000  BU235 (N1564)
+     MUXCY:S->O            1   0.334   0.000  BU236 (N1568)
+     MUXCY:CI->O           1   0.036   0.000  BU239 (N1567)
+     MUXCY:CI->O           1   0.036   0.000  BU242 (N1566)
+     MUXCY_D:CI->LO        0   0.416   0.000  BU245 (N1565)
+     XORCY:CI->O           1   0.708   0.000  BU248 (N1571)
+     FDPE:D                    0.208          BU249
+    ----------------------------------------
+    Total                      2.916ns (2.383ns logic, 0.533ns route)
+                                       (81.7% logic, 18.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PHY_tx_clk'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.536ns (Levels of Logic = 0)
+  Source:            SPLB_Rst (PAD)
+  Destination:       Ethernet_MAC/IOFFS_GEN2.TEN_FF (FF)
+  Destination Clock: PHY_tx_clk rising
+
+  Data Path: SPLB_Rst to Ethernet_MAC/IOFFS_GEN2.TEN_FF
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:R                    0.536          Ethernet_MAC/IOFFS_GEN[3].TX_FF_I
+    ----------------------------------------
+    Total                      0.536ns (0.536ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PHY_rx_clk'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              0.536ns (Levels of Logic = 0)
+  Source:            SPLB_Rst (PAD)
+  Destination:       Ethernet_MAC/IOFFS_GEN2.RER_FF (FF)
+  Destination Clock: PHY_rx_clk rising
+
+  Data Path: SPLB_Rst to Ethernet_MAC/IOFFS_GEN2.RER_FF
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:R                    0.536          Ethernet_MAC/IOFFS_GEN[3].RX_FF_I
+    ----------------------------------------
+    Total                      0.536ns (0.536ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 525 / 524
+-------------------------------------------------------------------------
+Offset:              2.075ns (Levels of Logic = 2)
+  Source:            SPLB_Rst (PAD)
+  Destination:       Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_txBusFifoWriteNibbleCount/PERBIT_GEN[11].FF_RST0_GEN.FDRE_i1 (FF)
+  Destination Clock: SPLB_Clk rising
+
+  Data Path: SPLB_Rst to Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_txBusFifoWriteNibbleCount/PERBIT_GEN[11].FF_RST0_GEN.FDRE_i1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT4:I3->O            1   0.275   0.429  Ethernet_MAC/XEMAC_I/EMAC_I/TX/txComboBusFifoWrCntRst14 (Ethernet_MAC/XEMAC_I/EMAC_I/TX/txComboBusFifoWrCntRst14)
+     LUT2:I1->O           12   0.275   0.521  Ethernet_MAC/XEMAC_I/EMAC_I/TX/txComboBusFifoWrCntRst15 (Ethernet_MAC/XEMAC_I/EMAC_I/TX/txComboBusFifoWrCntRst)
+     FDRE:R                    0.536          Ethernet_MAC/XEMAC_I/EMAC_I/TX/inst_txBusFifoWriteNibbleCount/PERBIT_GEN[11].FF_RST0_GEN.FDRE_i1
+    ----------------------------------------
+    Total                      2.075ns (1.124ns logic, 0.951ns route)
+                                       (54.2% logic, 45.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 80 / 73
+-------------------------------------------------------------------------
+Offset:              1.583ns (Levels of Logic = 2)
+  Source:            Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/state20a (FF)
+  Destination:       IP2INTC_Irpt (PAD)
+  Source Clock:      SPLB_Clk rising
+
+  Data Path: Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/state20a to IP2INTC_Irpt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              9   0.370   0.635  Ethernet_MAC/XEMAC_I/EMAC_I/RX/inst_rx_state/state20a (Ethernet_MAC/XEMAC_I/rx_done)
+     LUT4:I0->O            1   0.275   0.000  Ethernet_MAC/XEMAC_I/IP2INTC_Irpt1 (Ethernet_MAC/XEMAC_I/IP2INTC_Irpt)
+     MUXF5:I1->O           0   0.303   0.000  Ethernet_MAC/XEMAC_I/IP2INTC_Irpt_f5 (IP2INTC_Irpt)
+    ----------------------------------------
+    Total                      1.583ns (0.948ns logic, 0.635ns route)
+                                       (59.9% logic, 40.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PHY_tx_clk'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              0.370ns (Levels of Logic = 0)
+  Source:            Ethernet_MAC/IOFFS_GEN2.TEN_FF (FF)
+  Destination:       PHY_tx_en (PAD)
+  Source Clock:      PHY_tx_clk rising
+
+  Data Path: Ethernet_MAC/IOFFS_GEN2.TEN_FF to PHY_tx_en
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             0   0.370   0.000  Ethernet_MAC/IOFFS_GEN2.TEN_FF (PHY_tx_en)
+    ----------------------------------------
+    Total                      0.370ns (0.370ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.275ns (Levels of Logic = 1)
+  Source:            SPLB_Rst (PAD)
+  Destination:       PHY_rst_n (PAD)
+
+  Data Path: SPLB_Rst to PHY_rst_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     INV:I->O              0   0.275   0.000  Ethernet_MAC/PHY_rst_n1_INV_0 (PHY_rst_n)
+    ----------------------------------------
+    Total                      0.275ns (0.275ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 23.00 secs
+ 
+--> 
+
+
+Total memory usage is 272136 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  411 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

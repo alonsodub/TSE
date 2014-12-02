@@ -1,0 +1,790 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+Reading design: FPadd.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FPadd.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FPadd"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : FPadd
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fplzc_fplzc.vhd" into library work
+Parsing entity <FPlzc>.
+Parsing architecture <FPlzc> of entity <fplzc>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/common/unpackfp_unpackfp.vhd" into library work
+Parsing entity <UnpackFP>.
+Parsing architecture <UnpackFP> of entity <unpackfp>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/common/packfp_packfp.vhd" into library work
+Parsing entity <PackFP>.
+Parsing architecture <PackFP> of entity <packfp>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/common/fpround_fpround.vhd" into library work
+Parsing entity <FPround>.
+Parsing architecture <FPround> of entity <fpround>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/common/fpnormalize_fpnormalize.vhd" into library work
+Parsing entity <FPnormalize>.
+Parsing architecture <FPnormalize> of entity <fpnormalize>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpswap_fpswap.vhd" into library work
+Parsing entity <FPswap>.
+Parsing architecture <FPswap> of entity <fpswap>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpselcomplement_fpselcomplement.vhd" into library work
+Parsing entity <FPselComplement>.
+Parsing architecture <FPselComplement> of entity <fpselcomplement>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpinvert_fpinvert.vhd" into library work
+Parsing entity <FPinvert>.
+Parsing architecture <FPinvert> of entity <fpinvert>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpalign_struct.vhd" into library work
+Parsing entity <FPalign>.
+Parsing architecture <struct> of entity <fpalign>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_normalize_struct.vhd" into library work
+Parsing entity <FPadd_normalize>.
+Parsing architecture <struct> of entity <fpadd_normalize>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage6_struct.vhd" into library work
+Parsing entity <FPadd_stage6>.
+Parsing architecture <struct> of entity <fpadd_stage6>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage5_struct.vhd" into library work
+Parsing entity <FPadd_stage5>.
+Parsing architecture <struct> of entity <fpadd_stage5>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage4_struct.vhd" into library work
+Parsing entity <FPadd_stage4>.
+Parsing architecture <struct> of entity <fpadd_stage4>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage3_struct.vhd" into library work
+Parsing entity <FPadd_stage3>.
+Parsing architecture <struct> of entity <fpadd_stage3>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage2_struct.vhd" into library work
+Parsing entity <FPadd_stage2>.
+Parsing architecture <struct> of entity <fpadd_stage2>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage1_struct.vhd" into library work
+Parsing entity <FPadd_stage1>.
+Parsing architecture <struct> of entity <fpadd_stage1>.
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_pipeline.vhd" into library work
+Parsing entity <FPadd>.
+Parsing architecture <pipeline> of entity <fpadd>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <FPadd> (architecture <pipeline>) from library <work>.
+
+Elaborating entity <FPadd_stage1> (architecture <struct>) from library <work>.
+
+Elaborating entity <UnpackFP> (architecture <UnpackFP>) from library <work>.
+
+Elaborating entity <FPadd_stage2> (architecture <struct>) from library <work>.
+INFO:HDLCompiler:679 - "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage2_struct.vhd" Line 246. Case statement is complete. others clause is never selected
+
+Elaborating entity <FPalign> (architecture <struct>) from library <work>.
+
+Elaborating entity <FPswap> (architecture <FPswap>) with generics from library <work>.
+
+Elaborating entity <FPadd_stage3> (architecture <struct>) from library <work>.
+
+Elaborating entity <FPinvert> (architecture <FPinvert>) with generics from library <work>.
+
+Elaborating entity <FPadd_stage4> (architecture <struct>) from library <work>.
+INFO:HDLCompiler:679 - "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage4_struct.vhd" Line 161. Case statement is complete. others clause is never selected
+
+Elaborating entity <FPadd_normalize> (architecture <struct>) from library <work>.
+
+Elaborating entity <FPlzc> (architecture <FPlzc>) from library <work>.
+
+Elaborating entity <FPselComplement> (architecture <FPselComplement>) with generics from library <work>.
+
+Elaborating entity <FPadd_stage5> (architecture <struct>) from library <work>.
+
+Elaborating entity <FPnormalize> (architecture <FPnormalize>) with generics from library <work>.
+
+Elaborating entity <FPround> (architecture <FPround>) with generics from library <work>.
+
+Elaborating entity <FPadd_stage6> (architecture <struct>) from library <work>.
+
+Elaborating entity <PackFP> (architecture <PackFP>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FPadd>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_pipeline.vhd".
+    Summary:
+	no macro.
+Unit <FPadd> synthesized.
+
+Synthesizing Unit <FPadd_stage1>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage1_struct.vhd".
+    Found 1-bit register for signal <B_XSIGN>.
+    Found 8-bit register for signal <A_EXP>.
+    Found 8-bit register for signal <B_EXP>.
+    Found 9-bit register for signal <EXP_diff>.
+    Found 1-bit register for signal <A_isZ>.
+    Found 1-bit register for signal <B_isZ>.
+    Found 1-bit register for signal <A_isINF>.
+    Found 1-bit register for signal <B_isINF>.
+    Found 1-bit register for signal <A_isNaN>.
+    Found 1-bit register for signal <B_isNaN>.
+    Found 1-bit register for signal <ADD_SUB_out>.
+    Found 1-bit register for signal <cin_sub>.
+    Found 1-bit register for signal <A_SIGN>.
+    Found 27-bit register for signal <A_in>.
+    Found 27-bit register for signal <B_in>.
+    Found 10-bit subtractor for signal <a_exp_in[8]_b_exp_in[8]_sub_10_OUT<9:0>> created at line 164.
+    Found 9-bit subtractor for signal <I5combo.diff<8:0>> created at line 158.
+    WARNING:Xst:2404 -  FFs/Latches <A_in<28:27>> (without init value) have a constant value of 0 in block <FPadd_stage1>.
+    WARNING:Xst:2404 -  FFs/Latches <B_in<28:27>> (without init value) have a constant value of 0 in block <FPadd_stage1>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  89 D-type flip-flop(s).
+Unit <FPadd_stage1> synthesized.
+
+Synthesizing Unit <UnpackFP>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/common/unpackfp_unpackfp.vhd".
+    Summary:
+	no macro.
+Unit <UnpackFP> synthesized.
+
+Synthesizing Unit <FPadd_stage2>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage2_struct.vhd".
+    Found 1-bit register for signal <invert_A>.
+    Found 1-bit register for signal <invert_B>.
+    Found 8-bit register for signal <EXP_base_stage2>.
+    Found 29-bit register for signal <A_align>.
+    Found 29-bit register for signal <B_align>.
+    Found 1-bit register for signal <A_SIGN_stage2>.
+    Found 1-bit register for signal <B_XSIGN_stage2>.
+    Found 1-bit register for signal <isINF_tab_stage2>.
+    Found 1-bit register for signal <isNaN_stage2>.
+    Found 1-bit register for signal <isZ_tab_stage2>.
+    Found 1-bit register for signal <cin>.
+    Summary:
+	inferred  74 D-type flip-flop(s).
+	inferred  18 Multiplexer(s).
+Unit <FPadd_stage2> synthesized.
+
+Synthesizing Unit <FPalign>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpalign_struct.vhd".
+    Found 9-bit adder for signal <diff_int[8]_GND_8_o_add_1_OUT> created at line 67.
+    Found 6-bit adder for signal <diff_int[5]_GND_8_o_add_8_OUT> created at line 86.
+    Found 9-bit adder for signal <diff[8]_GND_8_o_add_10_OUT> created at line 97.
+    Found 9-bit comparator greater for signal <GND_8_o_diff_int[8]_LessThan_3_o> created at line 67
+    Found 9-bit comparator greater for signal <GND_8_o_diff_int[8]_LessThan_5_o> created at line 73
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  11 Multiplexer(s).
+Unit <FPalign> synthesized.
+
+Synthesizing Unit <FPswap>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpswap_fpswap.vhd".
+        width = 29
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <FPswap> synthesized.
+
+Synthesizing Unit <FPadd_stage3>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage3_struct.vhd".
+    Found 8-bit register for signal <EXP_base>.
+    Found 1-bit register for signal <A_SIGN_stage3>.
+    Found 1-bit register for signal <B_XSIGN_stage3>.
+    Found 1-bit register for signal <isINF_tab_stage3>.
+    Found 1-bit register for signal <isNaN_stage3>.
+    Found 1-bit register for signal <isZ_tab_stage3>.
+    Found 29-bit register for signal <add_out>.
+    Found 30-bit adder for signal <n0026> created at line 119.
+    Found 30-bit adder for signal <I4combo.mw_I4sum> created at line 119.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  42 D-type flip-flop(s).
+Unit <FPadd_stage3> synthesized.
+
+Synthesizing Unit <FPinvert>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpinvert_fpinvert.vhd".
+        width = 29
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <FPinvert> synthesized.
+
+Synthesizing Unit <FPadd_stage4>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage4_struct.vhd".
+    Found 1-bit register for signal <OV_stage4>.
+    Found 8-bit register for signal <EXP_norm>.
+    Found 28-bit register for signal <SIG_norm>.
+    Found 1-bit register for signal <zero_stage4>.
+    Found 1-bit register for signal <isINF_tab_stage4>.
+    Found 1-bit register for signal <isNaN_stage4>.
+    Found 1-bit register for signal <isZ_tab_stage4>.
+    Found 1-bit register for signal <Z_SIGN_stage4>.
+    Found 8x2-bit Read Only RAM for signal <_n0027>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  42 D-type flip-flop(s).
+Unit <FPadd_stage4> synthesized.
+
+Synthesizing Unit <FPadd_normalize>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_normalize_struct.vhd".
+    Found 9-bit adder for signal <I4combo.sum> created at line 169.
+    Found 5-bit subtractor for signal <GND_14_o_GND_14_o_sub_3_OUT<4:0>> created at line 95.
+    Found 9-bit subtractor for signal <EXP_in[7]_add_in[7]_sub_32_OUT<8:0>> created at line 216.
+    Found 8-bit comparator greater for signal <denormal> created at line 94
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <FPadd_normalize> synthesized.
+
+Synthesizing Unit <FPlzc>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/adder/fplzc_fplzc.vhd".
+    Summary:
+	inferred  26 Multiplexer(s).
+Unit <FPlzc> synthesized.
+
+Synthesizing Unit <FPselComplement>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpselcomplement_fpselcomplement.vhd".
+        SIG_width = 28
+    Found 28-bit adder for signal <SIG_in[27]_GND_16_o_add_2_OUT> created at line 42.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <FPselComplement> synthesized.
+
+Synthesizing Unit <FPadd_stage5>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage5_struct.vhd".
+    Found 28-bit register for signal <SIG_norm2>.
+    Found 1-bit register for signal <Z_SIGN>.
+    Found 1-bit register for signal <OV>.
+    Found 1-bit register for signal <zero>.
+    Found 1-bit register for signal <isINF_tab>.
+    Found 1-bit register for signal <isNaN>.
+    Found 1-bit register for signal <isZ_tab>.
+    Found 8-bit register for signal <Z_EXP>.
+    Summary:
+	inferred  42 D-type flip-flop(s).
+Unit <FPadd_stage5> synthesized.
+
+Synthesizing Unit <FPnormalize>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/common/fpnormalize_fpnormalize.vhd".
+        SIG_width = 28
+    Found 8-bit adder for signal <EXP_in[7]_GND_18_o_add_0_OUT> created at line 41.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <FPnormalize> synthesized.
+
+Synthesizing Unit <FPround>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/common/fpround_fpround.vhd".
+        SIG_width = 28
+    Found 25-bit adder for signal <SIG_in[27]_GND_19_o_add_1_OUT> created at line 45.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <FPround> synthesized.
+
+Synthesizing Unit <FPadd_stage6>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_stage6_struct.vhd".
+WARNING:Xst:647 - Input <SIG_norm2<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SIG_norm2<27:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <FP_Z>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <FPadd_stage6> synthesized.
+
+Synthesizing Unit <PackFP>.
+    Related source file is "/home/alonso/xilinxdev/fpuvhdl/source/common/packfp_packfp.vhd".
+    Summary:
+	inferred  93 Multiplexer(s).
+Unit <PackFP> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x2-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 13
+ 10-bit subtractor                                     : 1
+ 25-bit adder                                          : 1
+ 28-bit adder                                          : 1
+ 30-bit adder                                          : 2
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 3
+ 9-bit subtractor                                      : 2
+# Registers                                            : 49
+ 1-bit register                                        : 33
+ 2-bit register                                        : 1
+ 27-bit register                                       : 2
+ 28-bit register                                       : 2
+ 29-bit register                                       : 3
+ 32-bit register                                       : 1
+ 8-bit register                                        : 6
+ 9-bit register                                        : 1
+# Comparators                                          : 3
+ 8-bit comparator greater                              : 1
+ 9-bit comparator greater                              : 2
+# Multiplexers                                         : 170
+ 1-bit 2-to-1 multiplexer                              : 111
+ 28-bit 2-to-1 multiplexer                             : 11
+ 29-bit 2-to-1 multiplexer                             : 13
+ 5-bit 2-to-1 multiplexer                              : 27
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 6
+ 9-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <A_in_0> in Unit <I1> is equivalent to the following 5 FFs/Latches, which will be removed : <A_in_1> <A_in_2> <B_in_0> <B_in_1> <B_in_2> 
+WARNING:Xst:1710 - FF/Latch <A_in_0> (without init value) has a constant value of 0 in block <I1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <SIG_norm2_0> of sequential type is unconnected in block <I5>.
+WARNING:Xst:2677 - Node <SIG_norm2_1> of sequential type is unconnected in block <I5>.
+WARNING:Xst:2677 - Node <SIG_norm2_2> of sequential type is unconnected in block <I5>.
+WARNING:Xst:2677 - Node <SIG_norm2_26> of sequential type is unconnected in block <I5>.
+WARNING:Xst:2677 - Node <SIG_norm2_27> of sequential type is unconnected in block <I5>.
+
+Synthesizing (advanced) Unit <FPadd_stage4>.
+INFO:Xst:3231 - The small RAM <Mram__n0027> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 2-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(A_SIGN_stage3,B_XSIGN_stage3,add_out<28>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <FPadd_stage4> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x2-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 11
+ 25-bit adder                                          : 1
+ 28-bit adder                                          : 1
+ 29-bit adder carry in                                 : 1
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 2
+ 9-bit subtractor borrow in                            : 1
+# Registers                                            : 321
+ Flip-Flops                                            : 321
+# Comparators                                          : 3
+ 8-bit comparator greater                              : 1
+ 9-bit comparator greater                              : 2
+# Multiplexers                                         : 178
+ 1-bit 2-to-1 multiplexer                              : 120
+ 28-bit 2-to-1 multiplexer                             : 11
+ 29-bit 2-to-1 multiplexer                             : 13
+ 5-bit 2-to-1 multiplexer                              : 27
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 6
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <I1/B_in_0> (without init value) has a constant value of 0 in block <FPadd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I1/B_in_1> (without init value) has a constant value of 0 in block <FPadd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I1/B_in_2> (without init value) has a constant value of 0 in block <FPadd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I1/A_in_0> (without init value) has a constant value of 0 in block <FPadd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I1/A_in_1> (without init value) has a constant value of 0 in block <FPadd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I1/A_in_2> (without init value) has a constant value of 0 in block <FPadd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SIG_norm2_27> (without init value) has a constant value of 0 in block <FPadd_stage5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <I2/A_align_0> (without init value) has a constant value of 0 in block <FPadd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2/A_align_1> (without init value) has a constant value of 0 in block <FPadd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2/A_align_2> (without init value) has a constant value of 0 in block <FPadd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2/A_align_27> (without init value) has a constant value of 0 in block <FPadd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2/A_align_28> (without init value) has a constant value of 0 in block <FPadd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2/B_align_27> (without init value) has a constant value of 0 in block <FPadd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2/B_align_28> (without init value) has a constant value of 0 in block <FPadd>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <FPadd> ...
+
+Optimizing unit <FPadd_stage3> ...
+
+Optimizing unit <FPadd_stage4> ...
+
+Optimizing unit <FPselComplement> ...
+
+Optimizing unit <FPadd_normalize> ...
+
+Optimizing unit <FPadd_stage5> ...
+
+Optimizing unit <FPadd_stage6> ...
+WARNING:Xst:2677 - Node <I4/SIG_norm_1> of sequential type is unconnected in block <FPadd>.
+WARNING:Xst:2677 - Node <I4/SIG_norm_0> of sequential type is unconnected in block <FPadd>.
+WARNING:Xst:2677 - Node <I5/SIG_norm2_26> of sequential type is unconnected in block <FPadd>.
+WARNING:Xst:2677 - Node <I5/SIG_norm2_2> of sequential type is unconnected in block <FPadd>.
+WARNING:Xst:2677 - Node <I5/SIG_norm2_1> of sequential type is unconnected in block <FPadd>.
+WARNING:Xst:2677 - Node <I5/SIG_norm2_0> of sequential type is unconnected in block <FPadd>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FPadd, actual ratio is 8.
+FlipFlop I3/add_out_28 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <FPadd> :
+	Found 2-bit shift register for signal <I3/B_XSIGN_stage3>.
+	Found 2-bit shift register for signal <I3/A_SIGN_stage3>.
+	Found 3-bit shift register for signal <I5/isNaN>.
+	Found 3-bit shift register for signal <I5/isINF_tab>.
+	Found 3-bit shift register for signal <I5/isZ_tab>.
+	Found 2-bit shift register for signal <I6/FP_Z_31>.
+Unit <FPadd> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 287
+ Flip-Flops                                            : 287
+# Shift Registers                                      : 6
+ 2-bit shift register                                  : 3
+ 3-bit shift register                                  : 3
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : FPadd.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 938
+#      GND                         : 1
+#      INV                         : 31
+#      LUT1                        : 25
+#      LUT2                        : 49
+#      LUT3                        : 87
+#      LUT4                        : 71
+#      LUT5                        : 129
+#      LUT6                        : 339
+#      MUXCY                       : 94
+#      MUXF7                       : 12
+#      VCC                         : 1
+#      XORCY                       : 99
+# FlipFlops/Latches                : 293
+#      FD                          : 283
+#      FDE                         : 6
+#      FDR                         : 3
+#      FDS                         : 1
+# Shift Registers                  : 6
+#      SRLC16E                     : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 97
+#      IBUF                        : 65
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             293  out of  18224     1%  
+ Number of Slice LUTs:                  737  out of   9112     8%  
+    Number used as Logic:               731  out of   9112     8%  
+    Number used as Memory:                6  out of   2176     0%  
+       Number used as SRL:                6
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    844
+   Number with an unused Flip Flop:     551  out of    844    65%  
+   Number with an unused LUT:           107  out of    844    12%  
+   Number of fully used LUT-FF pairs:   186  out of    844    22%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          98
+ Number of bonded IOBs:                  98  out of    232    42%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 299   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 14.776ns (Maximum Frequency: 67.677MHz)
+   Minimum input arrival time before clock: 6.113ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 14.776ns (frequency: 67.677MHz)
+  Total number of paths / destination ports: 6166942 / 219
+-------------------------------------------------------------------------
+Delay:               14.776ns (Levels of Logic = 25)
+  Source:            I3/add_out_2 (FF)
+  Destination:       I4/SIG_norm_19 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: I3/add_out_2 to I4/SIG_norm_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              11   0.525   1.038  I3/add_out_2 (I3/add_out_2)
+     INV:I->O              1   0.255   0.000  I4/I12/n0010<2>1_INV_0 (I4/I12/n0010<2>)
+     MUXCY:S->O            1   0.215   0.000  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<2> (I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<3> (I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<4> (I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<5> (I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<6> (I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<7> (I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<8> (I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<9> (I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<10> (I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<11> (I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<12> (I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<13> (I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<14> (I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_cy<14>)
+     XORCY:CI->O           4   0.206   1.080  I4/I12/Madd_SIG_in[27]_GND_16_o_add_2_OUT_xor<15> (I4/I12/SIG_in[27]_GND_16_o_add_2_OUT<15>)
+     LUT6:I2->O            5   0.254   1.296  I4/I8/I0/zero111 (I4/I8/I0/zero11)
+     LUT6:I0->O           16   0.254   1.182  I4/I8/I0/zero12 (I4/I8/I0/zero1)
+     LUT6:I5->O            1   0.254   0.682  I4/I8/I0/Mmux_count17_SW0 (N78)
+     LUT6:I5->O           15   0.254   1.155  I4/I8/I0/Mmux_count18 (I4/I8/count<0>)
+     LUT6:I5->O           12   0.254   1.069  I4/I8/denormal1 (I4/I8/denormal1)
+     LUT6:I5->O            4   0.254   0.804  I4/I8/Mmux_lshift_cnt5_1 (I4/I8/Mmux_lshift_cnt5)
+     LUT6:I5->O            1   0.254   0.790  I4/I8/lshift_cnt<2>221 (I4/I8/lshift_cnt<2>22)
+     LUT6:I4->O            4   0.250   0.804  I4/I8/lshift_cnt<2>223 (I4/I8/lshift_cnt<2>_mmx_out6)
+     LUT6:I5->O            1   0.254   0.790  I4/I8/Mmux_SIG_out212 (I4/I8/Mmux_SIG_out211)
+     LUT6:I4->O            1   0.250   0.000  I4/I8/Mmux_SIG_out213 (I4/SIG_norm_int<19>)
+     FD:D                      0.074          I4/SIG_norm_19
+    ----------------------------------------
+    Total                     14.776ns (4.086ns logic, 10.690ns route)
+                                       (27.7% logic, 72.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 552 / 83
+-------------------------------------------------------------------------
+Offset:              6.113ns (Levels of Logic = 5)
+  Source:            FP_B<1> (PAD)
+  Destination:       I1/B_isNaN (FF)
+  Destination Clock: clk rising
+
+  Data Path: FP_B<1> to I1/B_isNaN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   1.181  FP_B_1_IBUF (FP_B_1_IBUF)
+     LUT6:I0->O            2   0.254   1.002  I1/I3/sigZ<22>1 (I1/I3/sigZ<22>)
+     LUT4:I0->O            2   0.254   0.834  I1/I3/sigZ<22>5 (I1/I3/sigZ)
+     LUT4:I2->O            1   0.250   0.682  I1/I3/isNaN_SW0 (N32)
+     LUT6:I5->O            1   0.254   0.000  I1/I3/isNaN (I1/B_isNaN_int)
+     FD:D                      0.074          I1/B_isNaN
+    ----------------------------------------
+    Total                      6.113ns (2.414ns logic, 3.699ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            I6/FP_Z_31 (FF)
+  Destination:       FP_Z<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: I6/FP_Z_31 to FP_Z<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.525   0.681  I6/FP_Z_31 (I6/FP_Z_31)
+     OBUF:I->O                 2.912          FP_Z_31_OBUF (FP_Z<31>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   14.776|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 17.64 secs
+ 
+--> 
+
+
+Total memory usage is 397848 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   30 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

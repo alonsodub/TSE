@@ -1,0 +1,49 @@
+##############################################################################
+## Filename:          /home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/data/fpu_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sun Nov 30 17:39:01 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v2_00_a proc_common_pkg vhdl
+lib proc_common_v2_00_a ipif_pkg vhdl
+lib proc_common_v2_00_a or_muxcy vhdl
+lib proc_common_v2_00_a or_gate128 vhdl
+lib proc_common_v2_00_a family_support vhdl
+lib proc_common_v2_00_a pselect_f vhdl
+lib proc_common_v2_00_a counter_f vhdl
+lib plbv46_slave_single_v1_00_a plb_address_decoder vhdl
+lib plbv46_slave_single_v1_00_a plb_slave_attachment vhdl
+lib plbv46_slave_single_v1_00_a plbv46_slave_single vhdl
+lib proc_common_v2_00_a inferred_lut4 vhdl
+lib proc_common_v2_00_a pf_counter_bit vhdl
+lib proc_common_v2_00_a pf_counter vhdl
+lib proc_common_v2_00_a pf_counter_top vhdl
+lib proc_common_v2_00_a pf_occ_counter vhdl
+lib proc_common_v2_00_a pf_occ_counter_top vhdl
+lib proc_common_v2_00_a pf_adder_bit vhdl
+lib proc_common_v2_00_a pf_adder vhdl
+lib proc_common_v2_00_a pf_dpram_select vhdl
+lib proc_common_v2_00_a srl16_fifo vhdl
+lib rdpfifo_v4_00_a rdpfifo_dp_cntl vhdl
+lib rdpfifo_v4_00_a ipif_control_rd vhdl
+lib rdpfifo_v4_00_a rdpfifo_top vhdl
+lib dre_v2_00_a dsp48_mux vhdl
+lib dre_v2_00_a tx_dre_top vhdl
+lib wrpfifo_v4_00_a pf_dly1_mux vhdl
+lib wrpfifo_v4_00_a wrpfifo_dp_cntl vhdl
+lib wrpfifo_v4_00_a ipif_control_wr_dre vhdl
+lib wrpfifo_v4_00_a wrpfifo_top vhdl
+
+lib fpu_v1_00_a fpadd_single_cycle vhdl
+lib fpu_v1_00_a fpadd_normalize_struct vhdl
+lib fpu_v1_00_a fplzc_fplzc vhdl
+lib fpu_v1_00_a fpalign_struct vhdl
+lib fpu_v1_00_a fpinvert_fpinvert vhdl
+lib fpu_v1_00_a fpnormalize_fpnormalize vhdl
+lib fpu_v1_00_a fpround_fpround vhdl
+lib fpu_v1_00_a fpselcomplement_fpselcomplement vhdl
+lib fpu_v1_00_a fpswap_fpswap vhdl
+lib fpu_v1_00_a packfp_packfp vhdl
+lib fpu_v1_00_a unpackfp_unpackfp vhdl
+lib fpu_v1_00_a user_logic vhdl
+lib fpu_v1_00_a fpu vhdl

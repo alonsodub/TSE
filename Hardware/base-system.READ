@@ -1,0 +1,8 @@
+Hardware Reference Desing
+-------------------------
+	* PowerPC 405 100 Mhz
+	* Bus PLB  100 Mhz
+	* UART Lite 9600 B 
+	* Ethernete MAC Lite
+	* 64 KB BRAM 
+

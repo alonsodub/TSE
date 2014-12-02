@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/alonso/xilinxdev/fpuvhdl/FPadd_TestB_isim_beh.exe" -prj "/home/alonso/xilinxdev/fpuvhdl/FPadd_TestB_beh.prj" "work.FPadd_TestB" 

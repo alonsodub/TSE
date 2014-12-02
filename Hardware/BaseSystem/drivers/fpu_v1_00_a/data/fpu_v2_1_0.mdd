@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          /home/alonso/Linux-on-FPGA/Hardware/BaseSystem/drivers/fpu_v1_00_a/data/fpu_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Sun Nov 30 17:33:47 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER fpu
+
+  OPTION supported_peripherals = (fpu);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

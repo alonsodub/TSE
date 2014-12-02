@@ -1,0 +1,28 @@
+Command line:
+   FPadd_TestB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  47891
+
+Tue Nov  4 10:54:02 2014
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 228.753 Meg
+
+ Total Signals          : 149
+ Total Nets             : 916
+ Total Signal Drivers   : 87
+ Total Blocks           : 16
+ Total Primitive Blocks : 13
+ Total Processes        : 76
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 1300
+
+ Total Simulation Time: 0.06 sec
+
+ Current Memory Usage: 304.255 Meg
+
+Tue Nov  4 11:02:09 2014
+

@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/devl/synthesis/fpu_xst.prj"
+-top fpu
+-p virtex5
+-ofn "/home/alonso/Linux-on-FPGA/Hardware/BaseSystem/pcores/fpu_v1_00_a/devl/synthesis/fpu_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib fpu_v1_00_a

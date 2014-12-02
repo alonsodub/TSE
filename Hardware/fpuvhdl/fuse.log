@@ -1,0 +1,44 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/alonso/xilinxdev/fpuvhdl/FPadd_TestB_isim_beh.exe -prj /home/alonso/xilinxdev/fpuvhdl/FPadd_TestB_beh.prj work.FPadd_TestB 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/fplzc_fplzc.vhd" into library work
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/unpackfp_unpackfp.vhd" into library work
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/packfp_packfp.vhd" into library work
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/fpswap_fpswap.vhd" into library work
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/fpselcomplement_fpselcomplement.vhd" into library work
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/fpround_fpround.vhd" into library work
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/fpnormalize_fpnormalize.vhd" into library work
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/fpinvert_fpinvert.vhd" into library work
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/fpalign_struct.vhd" into library work
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/fpadd_normalize_struct.vhd" into library work
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/source/adder/fpadd_single_cycle.vhd" into library work
+Parsing VHDL file "/home/alonso/xilinxdev/fpuvhdl/FPadd_TestB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 97184 KB
+Fuse CPU Usage: 1150 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture fplzc of entity FPlzc [fplzc_default]
+Compiling architecture struct of entity FPadd_normalize [fpadd_normalize_default]
+Compiling architecture struct of entity FPalign [fpalign_default]
+Compiling architecture fpinvert of entity FPinvert [\FPinvert(29)\]
+Compiling architecture fpnormalize of entity FPnormalize [\FPnormalize(28)\]
+Compiling architecture fpround of entity FPround [\FPround(28)\]
+Compiling architecture fpselcomplement of entity FPselComplement [\FPselComplement(28)\]
+Compiling architecture fpswap of entity FPswap [\FPswap(29)\]
+Compiling architecture packfp of entity PackFP [packfp_default]
+Compiling architecture unpackfp of entity UnpackFP [unpackfp_default]
+Compiling architecture single_cycle of entity FPadd [fpadd_default]
+Compiling architecture behavior of entity fpadd_testb
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 27 VHDL Units
+Built simulation executable /home/alonso/xilinxdev/fpuvhdl/FPadd_TestB_isim_beh.exe
+Fuse Memory Usage: 669668 KB
+Fuse CPU Usage: 1310 ms
+GCC CPU Usage: 1560 ms
